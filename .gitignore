@@ -8,6 +8,10 @@ __pycache__/
 *.pyc
 .DS_Store
 
+# Detector bundle (~160MB) - dropped since the ground-truth-location pipeline (5b/5c) doesn't
+# need it; re-download via monai.bundle.download if the detector-based pipeline comes back
+/image_download/monai_bundles/
+
 # image_download: everything except the counting-pipeline files we explicitly track
 /image_download/Merlin/
 /image_download/jpeg_output/
