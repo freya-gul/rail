@@ -1,0 +1,20 @@
+# Data (transfer separately, e.g. via Google Drive — see chat)
+/datasets/
+
+# Envs / caches not needed for counting
+/.venv/
+/.venv-1/
+__pycache__/
+*.pyc
+.DS_Store
+
+# image_download: everything except the counting-pipeline files we explicitly track
+/image_download/Merlin/
+/image_download/jpeg_output/
+/image_download/jpeg_output_condensed/
+/image_download/roi_cache/
+/image_download/roi_previews/
+/image_download/roi_previews_0006/
+/image_download/nodule_characteristics/
+/image_download/medgemma_count_cache/
+/image_download/__pycache__/

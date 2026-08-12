@@ -1,0 +1,3 @@
+[dicom]
+path = /datasets/LIDC-IDRI-subset/lidc-idri
+warn = True

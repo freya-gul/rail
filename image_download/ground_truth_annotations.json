@@ -1,0 +1,4610 @@
+{
+  "LIDC-IDRI-0001": {
+    "found": true,
+    "scan_id": 12,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.179049373636438705059720603192",
+    "num_nodules": 1,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 4,
+        "diameter_mm": 32.755812386471106,
+        "centroid_mm": [
+          56.17468475854846,
+          86.20332200475828,
+          -115.86216850920475
+        ],
+        "annotations": [
+          {
+            "annotation_id": 84,
+            "diameter_mm": 32.20588825480909,
+            "surface_area_mm2": 2801.428430573194,
+            "volume_mm3": 7869.3695068359375,
+            "centroid_mm": [
+              55.518492879746816,
+              85.55549152848101,
+              -116.12078059071732
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 3,
+            "spiculation": 4,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 85,
+            "diameter_mm": 33.18869171589172,
+            "surface_area_mm2": 2198.454852008781,
+            "volume_mm3": 6146.4385986328125,
+            "centroid_mm": [
+              56.38244448183042,
+              86.94496009959624,
+              -115.67967698519517
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 5,
+            "spiculation": 5,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 86,
+            "diameter_mm": 31.959332373834876,
+            "surface_area_mm2": 2392.704187643274,
+            "volume_mm3": 6594.474792480469,
+            "centroid_mm": [
+              56.281309561626415,
+              86.31560814612453,
+              -116.15311308767471
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 2,
+            "lobulation": 3,
+            "spiculation": 3,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 87,
+            "diameter_mm": 33.669337201348725,
+            "surface_area_mm2": 2573.278820335965,
+            "volume_mm3": 7348.411560058594,
+            "centroid_mm": [
+              56.516492110990185,
+              85.99722824483132,
+              -115.49510337323177
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 5,
+            "texture": 4,
+            "malignancy": 4
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0002": {
+    "found": true,
+    "scan_id": 13,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.619372068417051974713149104919",
+    "num_nodules": 1,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 2,
+        "diameter_mm": 30.781671164152364,
+        "centroid_mm": [
+          59.817661672283265,
+          71.68302279793036,
+          -103.19432194340384
+        ],
+        "annotations": [
+          {
+            "annotation_id": 88,
+            "diameter_mm": 30.023171694362023,
+            "surface_area_mm2": 2880.758651765728,
+            "volume_mm3": 6576.900680531726,
+            "centroid_mm": [
+              60.09838875049314,
+              73.11684892652863,
+              -103.94649901380672
+            ],
+            "subtlety": 2,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 1,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 1,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 89,
+            "diameter_mm": 31.540170633942704,
+            "surface_area_mm2": 2733.639336970614,
+            "volume_mm3": 7912.4343360285275,
+            "centroid_mm": [
+              59.53693459407339,
+              70.2491966693321,
+              -102.44214487300096
+            ],
+            "subtlety": 1,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 2,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 2,
+            "malignancy": 4
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0003": {
+    "found": true,
+    "scan_id": 14,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.170706757615202213033480003264",
+    "num_nodules": 4,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 1,
+        "diameter_mm": 31.66446822927175,
+        "centroid_mm": [
+          73.83269417522126,
+          74.15172116106191,
+          -213.62831858407077
+        ],
+        "annotations": [
+          {
+            "annotation_id": 102,
+            "diameter_mm": 31.66446822927175,
+            "surface_area_mm2": 1996.252116549174,
+            "volume_mm3": 4731.410934448359,
+            "centroid_mm": [
+              73.83269417522126,
+              74.15172116106191,
+              -213.62831858407077
+            ],
+            "subtlety": 1,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 2,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 1,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 4,
+        "diameter_mm": 31.001964027750965,
+        "centroid_mm": [
+          72.01158730466041,
+          77.31853092854573,
+          -191.14355007608563
+        ],
+        "annotations": [
+          {
+            "annotation_id": 90,
+            "diameter_mm": 30.35154400000003,
+            "surface_area_mm2": 1923.004802567063,
+            "volume_mm3": 5190.67322248593,
+            "centroid_mm": [
+              72.17246979999999,
+              76.76765191272727,
+              -190.9181818181818
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 2,
+            "spiculation": 2,
+            "texture": 3,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 93,
+            "diameter_mm": 30.11785310840914,
+            "surface_area_mm2": 1689.5920008526018,
+            "volume_mm3": 4625.42732951697,
+            "centroid_mm": [
+              72.32092302429152,
+              77.79334685020245,
+              -190.81174089068827
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 3,
+            "lobulation": 2,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 98,
+            "diameter_mm": 27.99896820609218,
+            "surface_area_mm2": 1835.814907813748,
+            "volume_mm3": 5649.935510521755,
+            "centroid_mm": [
+              72.57086163565896,
+              77.61315136434109,
+              -190.89437984496124
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 3,
+            "lobulation": 3,
+            "spiculation": 3,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 99,
+            "diameter_mm": 35.53949079650251,
+            "surface_area_mm2": 3454.2976901805077,
+            "volume_mm3": 10611.81872872985,
+            "centroid_mm": [
+              70.98209475869118,
+              77.09997358691209,
+              -191.94989775051124
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 5,
+            "texture": 4,
+            "malignancy": 4
+          }
+        ]
+      },
+      {
+        "nodule_index": 2,
+        "num_annotations": 4,
+        "diameter_mm": 13.30915538551264,
+        "centroid_mm": [
+          23.71581165995972,
+          -47.64642498465503,
+          -172.5108537086807
+        ],
+        "annotations": [
+          {
+            "annotation_id": 91,
+            "diameter_mm": 13.35371188082773,
+            "surface_area_mm2": 315.09533174140626,
+            "volume_mm3": 437.3926552735793,
+            "centroid_mm": [
+              23.535425581818203,
+              -47.77211592727272,
+              -172.4090909090909
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 95,
+            "diameter_mm": 11.943923006990945,
+            "surface_area_mm2": 235.57039653631176,
+            "volume_mm3": 312.06283674313454,
+            "centroid_mm": [
+              23.807119149253737,
+              -47.51700668656716,
+              -172.65671641791045
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 97,
+            "diameter_mm": 13.150601764839804,
+            "surface_area_mm2": 356.17430554128407,
+            "volume_mm3": 555.1522163081972,
+            "centroid_mm": [
+              23.896436213114754,
+              -47.65891042622951,
+              -172.46311475409837
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 2,
+            "margin": 3,
+            "lobulation": 3,
+            "spiculation": 2,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 100,
+            "diameter_mm": 14.788384889392074,
+            "surface_area_mm2": 377.89436356405406,
+            "volume_mm3": 583.750966846128,
+            "centroid_mm": [
+              23.624265695652184,
+              -47.63766689855072,
+              -172.5144927536232
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 3,
+        "num_annotations": 4,
+        "diameter_mm": 14.983128350671969,
+        "centroid_mm": [
+          -47.169206195981076,
+          -29.913426382070078,
+          -169.24846656041507
+        ],
+        "annotations": [
+          {
+            "annotation_id": 92,
+            "diameter_mm": 14.674187158070445,
+            "surface_area_mm2": 624.4309292934005,
+            "volume_mm3": 1261.7095825202705,
+            "centroid_mm": [
+              -47.56051705025126,
+              -30.355794170854267,
+              -169.31407035175877
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 94,
+            "diameter_mm": 14.32613318693916,
+            "surface_area_mm2": 553.498811446804,
+            "volume_mm3": 1107.7810134530591,
+            "centroid_mm": [
+              -46.92388030526317,
+              -29.734279284210515,
+              -169.30263157894737
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 96,
+            "diameter_mm": 15.324692828668889,
+            "surface_area_mm2": 652.966424196914,
+            "volume_mm3": 1380.3102832767763,
+            "centroid_mm": [
+              -46.846598279999995,
+              -29.588781839999996,
+              -169.41250000000002
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 101,
+            "diameter_mm": 15.60750022900938,
+            "surface_area_mm2": 734.077567472895,
+            "volume_mm3": 1503.116682641412,
+            "centroid_mm": [
+              -47.34582914840988,
+              -29.974850233215534,
+              -168.96466431095405
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0004": {
+    "found": true,
+    "scan_id": 15,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.323541312620128092852212458228",
+    "num_nodules": 1,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 4,
+        "diameter_mm": 6.817327425145711,
+        "centroid_mm": [
+          -118.00529786812375,
+          94.73532056409492,
+          -230.18778682556828
+        ],
+        "annotations": [
+          {
+            "annotation_id": 103,
+            "diameter_mm": 6.262191288666272,
+            "surface_area_mm2": 76.4128565301213,
+            "volume_mm3": 67.18956161628739,
+            "centroid_mm": [
+              -118.44262411475411,
+              94.4853283278689,
+              -230.45081967213116
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 104,
+            "diameter_mm": 5.515928014760495,
+            "surface_area_mm2": 48.46483587623756,
+            "volume_mm3": 40.98985834454652,
+            "centroid_mm": [
+              -117.47047590476188,
+              94.9744514285714,
+              -230.0
+            ],
+            "subtlety": 2,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 3,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          },
+          {
+            "annotation_id": 105,
+            "diameter_mm": 7.0254437836472565,
+            "surface_area_mm2": 90.37362481363051,
+            "volume_mm3": 93.38926488799189,
+            "centroid_mm": [
+              -117.53505329850746,
+              94.79737495522392,
+              -230.3917910447761
+            ],
+            "subtlety": 2,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 2,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          },
+          {
+            "annotation_id": 106,
+            "diameter_mm": 8.46574661350882,
+            "surface_area_mm2": 149.67053987111623,
+            "volume_mm3": 162.26912994148734,
+            "centroid_mm": [
+              -118.57303815447155,
+              94.68412754471547,
+              -229.90853658536585
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0005": {
+    "found": true,
+    "scan_id": 16,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.129007566048223160327836686225",
+    "num_nodules": 3,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 4,
+        "diameter_mm": 5.696569523133998,
+        "centroid_mm": [
+          -79.29401867250569,
+          94.06011877937404,
+          -146.30838789084004
+        ],
+        "annotations": [
+          {
+            "annotation_id": 107,
+            "diameter_mm": 6.264748378515754,
+            "surface_area_mm2": 106.9688849602691,
+            "volume_mm3": 115.20559128402965,
+            "centroid_mm": [
+              -79.16741328571429,
+              93.78168914285715,
+              -146.26948779591837
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 110,
+            "diameter_mm": 5.673748215123061,
+            "surface_area_mm2": 91.80353034112693,
+            "volume_mm3": 94.25912014172354,
+            "centroid_mm": [
+              -79.11856202325582,
+              94.14224297674423,
+              -146.32406776744185
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 2,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 113,
+            "diameter_mm": 4.834444333295409,
+            "surface_area_mm2": 69.07252275173579,
+            "volume_mm3": 63.94185927732906,
+            "centroid_mm": [
+              -79.20878342105263,
+              94.13939815789473,
+              -146.294998
+            ],
+            "subtlety": 1,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 114,
+            "diameter_mm": 6.013337165601764,
+            "surface_area_mm2": 97.70440320248562,
+            "volume_mm3": 102.52746401398326,
+            "centroid_mm": [
+              -79.68131595999999,
+              94.17714484000004,
+              -146.34499799999998
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 4,
+        "diameter_mm": 7.903706425240214,
+        "centroid_mm": [
+          44.26583851563347,
+          100.2974087794774,
+          -139.73038620614182
+        ],
+        "annotations": [
+          {
+            "annotation_id": 108,
+            "diameter_mm": 8.658309175207364,
+            "surface_area_mm2": 174.79486548797263,
+            "volume_mm3": 196.23536123050144,
+            "centroid_mm": [
+              43.86212345569621,
+              100.26482815189877,
+              -139.82347901265823
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 111,
+            "diameter_mm": 6.772130192470916,
+            "surface_area_mm2": 83.47208995546521,
+            "volume_mm3": 73.86387192382244,
+            "centroid_mm": [
+              44.28085922222223,
+              100.49458800000002,
+              -140.044998
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 3,
+            "lobulation": 2,
+            "spiculation": 2,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 112,
+            "diameter_mm": 7.152166624310693,
+            "surface_area_mm2": 105.58881415639325,
+            "volume_mm3": 94.25912014165078,
+            "centroid_mm": [
+              44.55140300000002,
+              100.14968758139537,
+              -139.17290497674418
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 115,
+            "diameter_mm": 9.032219708971885,
+            "surface_area_mm2": 202.88914942650632,
+            "volume_mm3": 249.1527620117995,
+            "centroid_mm": [
+              44.368968384615414,
+              100.28053138461541,
+              -139.8801628351648
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 2,
+        "num_annotations": 1,
+        "diameter_mm": 6.264748378515784,
+        "centroid_mm": [
+          107.00274486666666,
+          80.08574920000004,
+          -121.26722022222225
+        ],
+        "annotations": [
+          {
+            "annotation_id": 109,
+            "diameter_mm": 6.264748378515784,
+            "surface_area_mm2": 100.07357189038548,
+            "volume_mm3": 90.9517825927469,
+            "centroid_mm": [
+              107.00274486666666,
+              80.08574920000004,
+              -121.26722022222225
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0006": {
+    "found": true,
+    "scan_id": 17,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.132817748896065918417924920957",
+    "num_nodules": 4,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 1,
+        "diameter_mm": 6.987712429686843,
+        "centroid_mm": [
+          -38.0688536491228,
+          46.9425468596491,
+          -195.40350877192984
+        ],
+        "annotations": [
+          {
+            "annotation_id": 116,
+            "diameter_mm": 6.987712429686843,
+            "surface_area_mm2": 118.07638620087964,
+            "volume_mm3": 115.72265625,
+            "centroid_mm": [
+              -38.0688536491228,
+              46.9425468596491,
+              -195.40350877192984
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 5,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 2,
+        "diameter_mm": 6.628323788493612,
+        "centroid_mm": [
+          87.28750600000001,
+          42.64134915384615,
+          -161.5
+        ],
+        "annotations": [
+          {
+            "annotation_id": 119,
+            "diameter_mm": 6.73145600891813,
+            "surface_area_mm2": 73.40738045812196,
+            "volume_mm3": 62.01171875,
+            "centroid_mm": [
+              87.28750600000001,
+              42.66538761538459,
+              -161.5
+            ],
+            "subtlety": 2,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 121,
+            "diameter_mm": 6.5251915680690935,
+            "surface_area_mm2": 69.50113045812196,
+            "volume_mm3": 57.12890625,
+            "centroid_mm": [
+              87.28750600000001,
+              42.61731069230771,
+              -161.5
+            ],
+            "subtlety": 1,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 3,
+            "texture": 4,
+            "malignancy": 3
+          }
+        ]
+      },
+      {
+        "nodule_index": 2,
+        "num_annotations": 1,
+        "diameter_mm": 15.051993223490369,
+        "centroid_mm": [
+          69.59136238297873,
+          56.351199808510614,
+          -155.156914893617
+        ],
+        "annotations": [
+          {
+            "annotation_id": 123,
+            "diameter_mm": 15.051993223490369,
+            "surface_area_mm2": 418.1557574388098,
+            "volume_mm3": 465.8203125,
+            "centroid_mm": [
+              69.59136238297873,
+              56.351199808510614,
+              -155.156914893617
+            ],
+            "subtlety": 1,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 2,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 1,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 3,
+        "num_annotations": 4,
+        "diameter_mm": 8.763416161900523,
+        "centroid_mm": [
+          74.52385935917314,
+          57.22210243570452,
+          -122.22751978698454
+        ],
+        "annotations": [
+          {
+            "annotation_id": 117,
+            "diameter_mm": 9.519716382329886,
+            "surface_area_mm2": 182.7342411853325,
+            "volume_mm3": 200.1953125,
+            "centroid_mm": [
+              73.93929171428573,
+              56.71071728571428,
+              -122.60714285714283
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 118,
+            "diameter_mm": 9.702609185162515,
+            "surface_area_mm2": 189.12834133438614,
+            "volume_mm3": 216.796875,
+            "centroid_mm": [
+              74.47500600000001,
+              57.47095888235293,
+              -122.71323529411765
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 2,
+            "spiculation": 4,
+            "texture": 4,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 120,
+            "diameter_mm": 8.705242673240075,
+            "surface_area_mm2": 184.51683138301962,
+            "volume_mm3": 207.51953125,
+            "centroid_mm": [
+              74.80930832558141,
+              57.192444860465145,
+              -121.73255813953486
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 2,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 122,
+            "diameter_mm": 7.126096406869612,
+            "surface_area_mm2": 114.34119383505474,
+            "volume_mm3": 98.6328125,
+            "centroid_mm": [
+              74.87183139682543,
+              57.514288714285726,
+              -121.85714285714285
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0007": {
+    "found": true,
+    "scan_id": 18,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.272348349298439120568330857680",
+    "num_nodules": 2,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 4,
+        "diameter_mm": 34.442065596612395,
+        "centroid_mm": [
+          -48.30369854756778,
+          44.81288876997458,
+          -90.92959487760444
+        ],
+        "annotations": [
+          {
+            "annotation_id": 124,
+            "diameter_mm": 34.410493039914435,
+            "surface_area_mm2": 2850.2232373763222,
+            "volume_mm3": 6100.4638671875,
+            "centroid_mm": [
+              -48.12100213219617,
+              45.74807136034113,
+              -90.16364605543711
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 3,
+            "spiculation": 5,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 126,
+            "diameter_mm": 33.811070325597505,
+            "surface_area_mm2": 3359.6312648839075,
+            "volume_mm3": 6510.92529296875,
+            "centroid_mm": [
+              -47.83876571806752,
+              44.227379528127074,
+              -91.6955658504302
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 3,
+            "lobulation": 4,
+            "spiculation": 5,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 127,
+            "diameter_mm": 37.62998305872593,
+            "surface_area_mm2": 3217.521981161821,
+            "volume_mm3": 9007.26318359375,
+            "centroid_mm": [
+              -48.9258748801534,
+              44.96437859156282,
+              -89.84755512943434
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 2,
+            "lobulation": 5,
+            "spiculation": 5,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 128,
+            "diameter_mm": 31.916715962211715,
+            "surface_area_mm2": 4609.350017384193,
+            "volume_mm3": 11568.450927734375,
+            "centroid_mm": [
+              -48.32915145985402,
+              44.31172559986729,
+              -92.01161247511611
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 5,
+            "texture": 4,
+            "malignancy": 4
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 1,
+        "diameter_mm": 20.684691085740198,
+        "centroid_mm": [
+          29.083136792452848,
+          26.12105307966459,
+          -48.5146750524109
+        ],
+        "annotations": [
+          {
+            "annotation_id": 125,
+            "diameter_mm": 20.684691085740198,
+            "surface_area_mm2": 1351.3122556453336,
+            "volume_mm3": 2228.546142578125,
+            "centroid_mm": [
+              29.083136792452848,
+              26.12105307966459,
+              -48.5146750524109
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 2,
+            "lobulation": 4,
+            "spiculation": 4,
+            "texture": 5,
+            "malignancy": 5
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0008": {
+    "found": true,
+    "scan_id": 19,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.774060103415303828812229821954",
+    "num_nodules": 2,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 3,
+        "diameter_mm": 9.095609242035335,
+        "centroid_mm": [
+          -104.15978700859326,
+          26.24883911792598,
+          -169.40662065685163
+        ],
+        "annotations": [
+          {
+            "annotation_id": 129,
+            "diameter_mm": 8.156489460086368,
+            "surface_area_mm2": 128.4215967142238,
+            "volume_mm3": 143.4326171875,
+            "centroid_mm": [
+              -103.50815217391305,
+              26.528532608695656,
+              -169.30695752173915
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 131,
+            "diameter_mm": 11.71875,
+            "surface_area_mm2": 136.75411653078143,
+            "volume_mm3": 139.617919921875,
+            "centroid_mm": [
+              -105.11615566037736,
+              26.636202830188665,
+              -169.6822651509434
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 2,
+            "lobulation": 1,
+            "spiculation": 2,
+            "texture": 1,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 134,
+            "diameter_mm": 7.411588266019639,
+            "surface_area_mm2": 98.57344951461887,
+            "volume_mm3": 93.841552734375,
+            "centroid_mm": [
+              -103.85505319148936,
+              25.58178191489361,
+              -169.23063929787233
+            ],
+            "subtlety": 1,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 2,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 3,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 4,
+        "diameter_mm": 8.397048493288045,
+        "centroid_mm": [
+          88.57547705897804,
+          10.83387243605685,
+          -124.85817591673558
+        ],
+        "annotations": [
+          {
+            "annotation_id": 130,
+            "diameter_mm": 6.987712429686843,
+            "surface_area_mm2": 114.83350753252572,
+            "volume_mm3": 122.0703125,
+            "centroid_mm": [
+              88.99431818181819,
+              11.026278409090907,
+              -124.52681918181815
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 132,
+            "diameter_mm": 8.907620508587016,
+            "surface_area_mm2": 135.52007542486814,
+            "volume_mm3": 141.143798828125,
+            "centroid_mm": [
+              88.38265306122452,
+              10.841836734693914,
+              -124.64857242857141
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 133,
+            "diameter_mm": 8.156489460086368,
+            "surface_area_mm2": 119.55261864286499,
+            "volume_mm3": 124.359130859375,
+            "centroid_mm": [
+              88.35076530612247,
+              10.953443877551024,
+              -124.59755202040816
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 2,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 135,
+            "diameter_mm": 9.536371574791955,
+            "surface_area_mm2": 179.53342618203888,
+            "volume_mm3": 218.20068359375,
+            "centroid_mm": [
+              88.57417168674698,
+              10.513930722891558,
+              -125.65976003614458
+            ],
+            "subtlety": 2,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 2,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 3,
+            "malignancy": 2
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0009": {
+    "found": true,
+    "scan_id": 20,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.286061375572911414226912429210",
+    "num_nodules": 2,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 1,
+        "diameter_mm": 7.370297759419222,
+        "centroid_mm": [
+          -54.11351106451613,
+          99.328125,
+          -196.3306451612903
+        ],
+        "annotations": [
+          {
+            "annotation_id": 136,
+            "diameter_mm": 7.370297759419222,
+            "surface_area_mm2": 87.39955526633332,
+            "volume_mm3": 78.2012939453125,
+            "centroid_mm": [
+              -54.11351106451613,
+              99.328125,
+              -196.3306451612903
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 1,
+        "diameter_mm": 6.2986388658582415,
+        "centroid_mm": [
+          25.48794342857144,
+          91.32589285714286,
+          -116.73214285714283
+        ],
+        "annotations": [
+          {
+            "annotation_id": 137,
+            "diameter_mm": 6.2986388658582415,
+            "surface_area_mm2": 88.15305824717802,
+            "volume_mm3": 78.582763671875,
+            "centroid_mm": [
+              25.48794342857144,
+              91.32589285714286,
+              -116.73214285714283
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0010": {
+    "found": true,
+    "scan_id": 21,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.416701701108520592702405866796",
+    "num_nodules": 3,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 1,
+        "diameter_mm": 5.558689618375904,
+        "centroid_mm": [
+          29.807745666666648,
+          87.18124343859648,
+          -249.53947368421052
+        ],
+        "annotations": [
+          {
+            "annotation_id": 144,
+            "diameter_mm": 5.558689618375904,
+            "surface_area_mm2": 51.395719560796834,
+            "volume_mm3": 49.72812684631208,
+            "centroid_mm": [
+              29.807745666666648,
+              87.18124343859648,
+              -249.53947368421052
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 2,
+        "diameter_mm": 8.45176711342133,
+        "centroid_mm": [
+          88.01020789157357,
+          -53.631151430548826,
+          -217.1094888295289
+        ],
+        "annotations": [
+          {
+            "annotation_id": 141,
+            "diameter_mm": 7.560635291155332,
+            "surface_area_mm2": 92.84847474300358,
+            "volume_mm3": 94.14548286425998,
+            "centroid_mm": [
+              88.00535235211265,
+              -53.72474061971832,
+              -217.04225352112675
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 3,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 143,
+            "diameter_mm": 9.342898935687327,
+            "surface_area_mm2": 143.74499544194478,
+            "volume_mm3": 138.56283888228063,
+            "centroid_mm": [
+              88.01506343103449,
+              -53.537562241379334,
+              -217.17672413793105
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 2,
+            "margin": 5,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 2,
+        "num_annotations": 4,
+        "diameter_mm": 10.026450675531887,
+        "centroid_mm": [
+          47.776513244696275,
+          56.06753596027332,
+          -73.07921256115833
+        ],
+        "annotations": [
+          {
+            "annotation_id": 138,
+            "diameter_mm": 8.789060000000006,
+            "surface_area_mm2": 127.33540398355586,
+            "volume_mm3": 140.49402827426093,
+            "centroid_mm": [
+              47.527055385542155,
+              55.70986932530121,
+              -73.1024096385542
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 139,
+            "diameter_mm": 11.560203542006898,
+            "surface_area_mm2": 208.39801078451868,
+            "volume_mm3": 255.88259445183212,
+            "centroid_mm": [
+              47.963664981481486,
+              56.323162166666634,
+              -73.06712962962962
+            ],
+            "subtlety": 2,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 140,
+            "diameter_mm": 10.249717212181785,
+            "surface_area_mm2": 163.21855700525617,
+            "volume_mm3": 196.01572329702321,
+            "centroid_mm": [
+              47.93863673584906,
+              56.30796096226413,
+              -73.05424528301887
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 3,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 142,
+            "diameter_mm": 9.506821947938858,
+            "surface_area_mm2": 180.51308909668444,
+            "volume_mm3": 212.91363047770574,
+            "centroid_mm": [
+              47.6766958759124,
+              55.92915138686129,
+              -73.09306569343065
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 3,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0011": {
+    "found": true,
+    "scan_id": 22,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.140253591510022414496468423138",
+    "num_nodules": 10,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 4,
+        "diameter_mm": 9.346321891099844,
+        "centroid_mm": [
+          -107.93295219668978,
+          59.51901313655917,
+          -256.2760519021856
+        ],
+        "annotations": [
+          {
+            "annotation_id": 145,
+            "diameter_mm": 10.337482638666716,
+            "surface_area_mm2": 284.733531966495,
+            "volume_mm3": 433.10033024936274,
+            "centroid_mm": [
+              -108.35932000000001,
+              59.53597098347106,
+              -256.36570247933884
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 152,
+            "diameter_mm": 9.180358554197747,
+            "surface_area_mm2": 237.81309426211027,
+            "volume_mm3": 333.9485853271617,
+            "centroid_mm": [
+              -107.6097836039604,
+              59.82717395049502,
+              -256.46287128712873
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 3,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 153,
+            "diameter_mm": 9.180358554197747,
+            "surface_area_mm2": 266.8227918505208,
+            "volume_mm3": 408.312394018576,
+            "centroid_mm": [
+              -108.10783480991735,
+              59.48076691735534,
+              -256.2417355371901
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 159,
+            "diameter_mm": 8.687087817337167,
+            "surface_area_mm2": 217.4096620014472,
+            "volume_mm3": 298.1437885501873,
+            "centroid_mm": [
+              -107.65487037288136,
+              59.232140694915245,
+              -256.03389830508473
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 2,
+        "diameter_mm": 5.5684322784138125,
+        "centroid_mm": [
+          74.87559962367865,
+          15.864947214799159,
+          -240.45718816067654
+        ],
+        "annotations": [
+          {
+            "annotation_id": 157,
+            "diameter_mm": 6.384542585295822,
+            "surface_area_mm2": 111.82777164381619,
+            "volume_mm3": 118.43125087892986,
+            "centroid_mm": [
+              74.89364436363638,
+              16.03394012727273,
+              -240.4318181818182
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 2,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          },
+          {
+            "annotation_id": 162,
+            "diameter_mm": 4.752321971531803,
+            "surface_area_mm2": 53.593645504700675,
+            "volume_mm3": 55.0843027344672,
+            "centroid_mm": [
+              74.85755488372092,
+              15.695954302325589,
+              -240.4825581395349
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          }
+        ]
+      },
+      {
+        "nodule_index": 2,
+        "num_annotations": 1,
+        "diameter_mm": 5.248061677152805,
+        "centroid_mm": [
+          78.3227910588235,
+          -80.95296511764707,
+          -216.27941176470588
+        ],
+        "annotations": [
+          {
+            "annotation_id": 160,
+            "diameter_mm": 5.248061677152805,
+            "surface_area_mm2": 62.08493663620429,
+            "volume_mm3": 59.21562543961045,
+            "centroid_mm": [
+              78.3227910588235,
+              -80.95296511764707,
+              -216.27941176470588
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 3,
+        "num_annotations": 1,
+        "diameter_mm": 4.752321971531809,
+        "centroid_mm": [
+          -139.0523850322581,
+          25.103869258064492,
+          -208.7983870967742
+        ],
+        "annotations": [
+          {
+            "annotation_id": 167,
+            "diameter_mm": 4.752321971531809,
+            "surface_area_mm2": 41.60459940575461,
+            "volume_mm3": 40.62467326657497,
+            "centroid_mm": [
+              -139.0523850322581,
+              25.103869258064492,
+              -208.7983870967742
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          }
+        ]
+      },
+      {
+        "nodule_index": 4,
+        "num_annotations": 2,
+        "diameter_mm": 5.761724617318588,
+        "centroid_mm": [
+          -82.80239648874297,
+          -76.57889066510322,
+          -182.00246247654786
+        ],
+        "annotations": [
+          {
+            "annotation_id": 146,
+            "diameter_mm": 6.120239036131844,
+            "surface_area_mm2": 91.4430593104646,
+            "volume_mm3": 90.20054572749359,
+            "centroid_mm": [
+              -83.17923443902438,
+              -76.40187256097563,
+              -181.59146341463415
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 164,
+            "diameter_mm": 5.403210198505334,
+            "surface_area_mm2": 76.24665165508952,
+            "volume_mm3": 77.80657761228213,
+            "centroid_mm": [
+              -82.42555853846156,
+              -76.75590876923079,
+              -182.41346153846155
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 5,
+        "num_annotations": 4,
+        "diameter_mm": 6.203326721609065,
+        "centroid_mm": [
+          106.6145410998877,
+          -46.45328051020972,
+          -181.3960809160506
+        ],
+        "annotations": [
+          {
+            "annotation_id": 147,
+            "diameter_mm": 6.638331280338445,
+            "surface_area_mm2": 101.0033036993,
+            "volume_mm3": 110.16860546878888,
+            "centroid_mm": [
+              106.45350227272723,
+              -46.54937618181819,
+              -181.4431818181818
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 150,
+            "diameter_mm": 6.638331280338445,
+            "surface_area_mm2": 106.41215505818022,
+            "volume_mm3": 116.36558952654013,
+            "centroid_mm": [
+              106.71985832558136,
+              -46.28537379069769,
+              -181.3546511627907
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          },
+          {
+            "annotation_id": 156,
+            "diameter_mm": 6.842635261669281,
+            "surface_area_mm2": 98.85338056768873,
+            "volume_mm3": 106.03728276400943,
+            "centroid_mm": [
+              106.56864408695651,
+              -46.236219782608714,
+              -181.55434782608694
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          },
+          {
+            "annotation_id": 165,
+            "diameter_mm": 4.69400906409009,
+            "surface_area_mm2": 46.47442135000841,
+            "volume_mm3": 41.31322705077764,
+            "centroid_mm": [
+              106.71615971428571,
+              -46.7421522857143,
+              -181.23214285714286
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          }
+        ]
+      },
+      {
+        "nodule_index": 6,
+        "num_annotations": 2,
+        "diameter_mm": 5.000191824342304,
+        "centroid_mm": [
+          37.18708998918919,
+          58.84135021081079,
+          -174.6141141141141
+        ],
+        "annotations": [
+          {
+            "annotation_id": 158,
+            "diameter_mm": 5.248061677152805,
+            "surface_area_mm2": 71.73303436964079,
+            "volume_mm3": 73.67525490713888,
+            "centroid_mm": [
+              36.868818378378364,
+              58.862746621621596,
+              -174.0337837837838
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          },
+          {
+            "annotation_id": 163,
+            "diameter_mm": 4.752321971531803,
+            "surface_area_mm2": 59.66783343660859,
+            "volume_mm3": 55.0843027344672,
+            "centroid_mm": [
+              37.505361600000015,
+              58.81995379999998,
+              -175.19444444444443
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          }
+        ]
+      },
+      {
+        "nodule_index": 7,
+        "num_annotations": 1,
+        "diameter_mm": 6.720798184903922,
+        "centroid_mm": [
+          54.30944038095237,
+          81.60630347619048,
+          -92.35317460317458
+        ],
+        "annotations": [
+          {
+            "annotation_id": 148,
+            "diameter_mm": 6.720798184903922,
+            "surface_area_mm2": 124.13671877792785,
+            "volume_mm3": 127.38245007312798,
+            "centroid_mm": [
+              54.30944038095237,
+              81.60630347619048,
+              -92.35317460317458
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 8,
+        "num_annotations": 2,
+        "diameter_mm": 4.8398281524998,
+        "centroid_mm": [
+          -49.803148137755116,
+          -39.33674431530612,
+          -67.59375
+        ],
+        "annotations": [
+          {
+            "annotation_id": 155,
+            "diameter_mm": 5.351993780068149,
+            "surface_area_mm2": 89.6494689531552,
+            "volume_mm3": 93.64331464843417,
+            "centroid_mm": [
+              -49.78705477551023,
+              -39.27104553061224,
+              -67.75
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          },
+          {
+            "annotation_id": 161,
+            "diameter_mm": 4.327662524931451,
+            "surface_area_mm2": 49.18417608953392,
+            "volume_mm3": 48.88731867675233,
+            "centroid_mm": [
+              -49.819241500000004,
+              -39.4024431,
+              -67.4375
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          }
+        ]
+      },
+      {
+        "nodule_index": 9,
+        "num_annotations": 4,
+        "diameter_mm": 15.267015577693435,
+        "centroid_mm": [
+          -72.89439866519812,
+          49.149302405410246,
+          -66.81783773896257
+        ],
+        "annotations": [
+          {
+            "annotation_id": 149,
+            "diameter_mm": 15.30059759032959,
+            "surface_area_mm2": 565.9190199782249,
+            "volume_mm3": 762.2290390868511,
+            "centroid_mm": [
+              -73.4507646138614,
+              48.85969286138615,
+              -66.67326732673268
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 2,
+            "margin": 3,
+            "lobulation": 3,
+            "spiculation": 3,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 151,
+            "diameter_mm": 14.276271225963722,
+            "surface_area_mm2": 571.6775230306757,
+            "volume_mm3": 949.5156683844107,
+            "centroid_mm": [
+              -72.08396295049506,
+              49.44021614851482,
+              -65.64603960396039
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 5,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 5,
+            "texture": 5,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 154,
+            "diameter_mm": 14.276271225963722,
+            "surface_area_mm2": 531.7697788164471,
+            "volume_mm3": 837.2814015635231,
+            "centroid_mm": [
+              -72.38770820754718,
+              48.99109743396224,
+              -66.53537735849058
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 4,
+            "spiculation": 4,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 166,
+            "diameter_mm": 17.2149222685167,
+            "surface_area_mm2": 580.9000240817763,
+            "volume_mm3": 766.3603617923218,
+            "centroid_mm": [
+              -73.65515888888889,
+              49.306203177777775,
+              -68.41666666666666
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 5,
+            "texture": 4,
+            "malignancy": 4
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0012": {
+    "found": true,
+    "scan_id": 23,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.328789598898469177563438457842",
+    "num_nodules": 12,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 3,
+        "diameter_mm": 5.896404468361894,
+        "centroid_mm": [
+          -94.22105062258652,
+          -66.5758658129326,
+          -243.33959471766852
+        ],
+        "annotations": [
+          {
+            "annotation_id": 181,
+            "diameter_mm": 5.652335409894926,
+            "surface_area_mm2": 93.22283675678082,
+            "volume_mm3": 92.26620708013797,
+            "centroid_mm": [
+              -94.04073093333334,
+              -66.42264026666666,
+              -243.25
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 191,
+            "diameter_mm": 6.384542585295834,
+            "surface_area_mm2": 126.9153089640985,
+            "volume_mm3": 148.727617382865,
+            "centroid_mm": [
+              -94.25595193442624,
+              -66.60811967213115,
+              -242.87295081967213
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 196,
+            "diameter_mm": 5.652335409894919,
+            "surface_area_mm2": 124.20153837566025,
+            "volume_mm3": 123.93968115244206,
+            "centroid_mm": [
+              -94.36646900000001,
+              -66.69683750000002,
+              -243.89583333333334
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 4,
+        "diameter_mm": 6.961291060999994,
+        "centroid_mm": [
+          94.70204249094728,
+          -58.83452788880825,
+          -223.0137668703845
+        ],
+        "annotations": [
+          {
+            "annotation_id": 168,
+            "diameter_mm": 7.041013596135135,
+            "surface_area_mm2": 135.99260992899664,
+            "volume_mm3": 150.79327873521834,
+            "centroid_mm": [
+              94.38430920000002,
+              -58.699761800000005,
+              -222.83333333333331
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 179,
+            "diameter_mm": 6.341257051729717,
+            "surface_area_mm2": 98.44784164445335,
+            "volume_mm3": 101.21740627440886,
+            "centroid_mm": [
+              94.86898045454541,
+              -58.61992036363637,
+              -223.4318181818182
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 189,
+            "diameter_mm": 7.421879999999987,
+            "surface_area_mm2": 147.40371492534427,
+            "volume_mm3": 178.33543010274298,
+            "centroid_mm": [
+              94.88783282352944,
+              -58.94934070588235,
+              -222.89705882352942
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 2,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 3,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 193,
+            "diameter_mm": 7.041013596135135,
+            "surface_area_mm2": 136.31627111255375,
+            "volume_mm3": 164.56435441868962,
+            "centroid_mm": [
+              94.66704748571425,
+              -59.06908868571429,
+              -222.89285714285714
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 2,
+        "num_annotations": 3,
+        "diameter_mm": 6.091459214642522,
+        "centroid_mm": [
+          -72.5059492650272,
+          52.793416878448625,
+          -212.24307397583257
+        ],
+        "annotations": [
+          {
+            "annotation_id": 182,
+            "diameter_mm": 5.983710953694194,
+            "surface_area_mm2": 85.53570820361904,
+            "volume_mm3": 88.82343815916101,
+            "centroid_mm": [
+              -72.32443692307693,
+              52.94529538461535,
+              -211.6602564102564
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 190,
+            "diameter_mm": 6.638331280338457,
+            "surface_area_mm2": 111.72149432988218,
+            "volume_mm3": 121.8740197995794,
+            "centroid_mm": [
+              -72.53803744827587,
+              52.78156779310342,
+              -212.3189655172414
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 3,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 195,
+            "diameter_mm": 5.652335409894913,
+            "surface_area_mm2": 92.95432397225767,
+            "volume_mm3": 95.70897600133321,
+            "centroid_mm": [
+              -72.65537342372882,
+              52.653387457627105,
+              -212.75
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 3,
+        "num_annotations": 4,
+        "diameter_mm": 12.69586769323868,
+        "centroid_mm": [
+          92.22053014836956,
+          0.5807238130765384,
+          -195.97227655495647
+        ],
+        "annotations": [
+          {
+            "annotation_id": 169,
+            "diameter_mm": 12.961756182706084,
+            "surface_area_mm2": 491.24127012010024,
+            "volume_mm3": 920.5964094481897,
+            "centroid_mm": [
+              92.2934554913295,
+              0.24147717919075262,
+              -196.3049132947977
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 178,
+            "diameter_mm": 12.812151347393307,
+            "surface_area_mm2": 459.66539596777125,
+            "volume_mm3": 823.5103258793242,
+            "centroid_mm": [
+              92.34156982278478,
+              0.8473593417721474,
+              -196.35759493670886
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 188,
+            "diameter_mm": 12.240478072263688,
+            "surface_area_mm2": 482.9480622859853,
+            "volume_mm3": 873.7747521247366,
+            "centroid_mm": [
+              91.9966688913043,
+              0.5021009999999819,
+              -195.75271739130434
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 192,
+            "diameter_mm": 12.769085170591644,
+            "surface_area_mm2": 491.0517414497534,
+            "volume_mm3": 908.8909951169626,
+            "centroid_mm": [
+              92.25042638805968,
+              0.7319577313432717,
+              -195.47388059701493
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 4,
+        "num_annotations": 2,
+        "diameter_mm": 6.018438997595373,
+        "centroid_mm": [
+          -77.52812409384165,
+          -91.95444554692082,
+          -190.25366568914956
+        ],
+        "annotations": [
+          {
+            "annotation_id": 180,
+            "diameter_mm": 5.65233540989492,
+            "surface_area_mm2": 86.32360859580336,
+            "volume_mm3": 84.6921154541269,
+            "centroid_mm": [
+              -77.4029750909091,
+              -91.79909754545456,
+              -190.13636363636363
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 203,
+            "diameter_mm": 6.384542585295826,
+            "surface_area_mm2": 112.59477571031499,
+            "volume_mm3": 130.13666521008417,
+            "centroid_mm": [
+              -77.6532730967742,
+              -92.1097935483871,
+              -190.3709677419355
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 5,
+        "num_annotations": 4,
+        "diameter_mm": 7.501931459222398,
+        "centroid_mm": [
+          76.40795618536224,
+          -58.79308305528474,
+          -188.37892050418583
+        ],
+        "annotations": [
+          {
+            "annotation_id": 170,
+            "diameter_mm": 8.687087817337163,
+            "surface_area_mm2": 192.73541871140338,
+            "volume_mm3": 242.37093203119002,
+            "centroid_mm": [
+              76.38922521518987,
+              -58.72497113924052,
+              -187.78164556962025
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 177,
+            "diameter_mm": 6.638331280338445,
+            "surface_area_mm2": 121.62996571710778,
+            "volume_mm3": 143.2191871094983,
+            "centroid_mm": [
+              76.55324249999995,
+              -58.671929750000004,
+              -189.0
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 187,
+            "diameter_mm": 7.041013596135135,
+            "surface_area_mm2": 148.93222181403885,
+            "volume_mm3": 184.53241416005767,
+            "centroid_mm": [
+              76.45240173913044,
+              -58.97781339130435,
+              -187.89492753623188
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 197,
+            "diameter_mm": 7.641293143078847,
+            "surface_area_mm2": 178.89840163463538,
+            "volume_mm3": 227.9113025632978,
+            "centroid_mm": [
+              76.2369552871287,
+              -58.79761794059408,
+              -188.8391089108911
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 6,
+        "num_annotations": 4,
+        "diameter_mm": 7.871139801495211,
+        "centroid_mm": [
+          38.223742143682486,
+          -70.8764060273731,
+          -177.74360562718238
+        ],
+        "annotations": [
+          {
+            "annotation_id": 171,
+            "diameter_mm": 7.993609395755099,
+            "surface_area_mm2": 184.58736719319964,
+            "volume_mm3": 239.6167168946704,
+            "centroid_mm": [
+              38.01265663999996,
+              -70.82958768000003,
+              -177.55
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 176,
+            "diameter_mm": 7.7486702072353175,
+            "surface_area_mm2": 163.21400297892026,
+            "volume_mm3": 201.7462587650516,
+            "centroid_mm": [
+              38.31782688235293,
+              -70.57331452941176,
+              -177.56617647058823
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 186,
+            "diameter_mm": 7.7486702072353255,
+            "surface_area_mm2": 161.27563228597884,
+            "volume_mm3": 203.8119201171503,
+            "centroid_mm": [
+              38.47586328767119,
+              -71.3147549589041,
+              -177.5445205479452
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 198,
+            "diameter_mm": 7.993609395755099,
+            "surface_area_mm2": 195.14027508964614,
+            "volume_mm3": 252.01068500966358,
+            "centroid_mm": [
+              38.08862176470586,
+              -70.78796694117648,
+              -178.31372549019608
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 7,
+        "num_annotations": 1,
+        "diameter_mm": 5.40321019850532,
+        "centroid_mm": [
+          81.12163454545453,
+          -60.40117156363638,
+          -162.47727272727272
+        ],
+        "annotations": [
+          {
+            "annotation_id": 202,
+            "diameter_mm": 5.40321019850532,
+            "surface_area_mm2": 99.52879783661098,
+            "volume_mm3": 106.0372827637184,
+            "centroid_mm": [
+              81.12163454545453,
+              -60.40117156363638,
+              -162.47727272727272
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 8,
+        "num_annotations": 4,
+        "diameter_mm": 8.251650495904371,
+        "centroid_mm": [
+          73.48238074619046,
+          -79.19361063929043,
+          -160.60856023102312
+        ],
+        "annotations": [
+          {
+            "annotation_id": 172,
+            "diameter_mm": 8.687087817337163,
+            "surface_area_mm2": 238.32818493960917,
+            "volume_mm3": 312.6034180178249,
+            "centroid_mm": [
+              72.80643007999998,
+              -79.56514044,
+              -161.15
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 173,
+            "diameter_mm": 7.993609395755073,
+            "surface_area_mm2": 163.66523315027663,
+            "volume_mm3": 204.50047390142572,
+            "centroid_mm": [
+              73.88342733333332,
+              -78.79862516666668,
+              -160.04166666666669
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 183,
+            "diameter_mm": 8.297914100423055,
+            "surface_area_mm2": 176.6653157116855,
+            "volume_mm3": 216.89444201620063,
+            "centroid_mm": [
+              73.80979757142853,
+              -79.22126,
+              -160.25
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 199,
+            "diameter_mm": 8.027990670102188,
+            "surface_area_mm2": 209.41745683087382,
+            "volume_mm3": 270.60163718284457,
+            "centroid_mm": [
+              73.429868,
+              -79.18941695049506,
+              -160.99257425742573
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 9,
+        "num_annotations": 3,
+        "diameter_mm": 7.1134021111009575,
+        "centroid_mm": [
+          54.02535471510658,
+          -74.67806976756256,
+          -157.7404232313871
+        ],
+        "annotations": [
+          {
+            "annotation_id": 174,
+            "diameter_mm": 7.309704074199461,
+            "surface_area_mm2": 140.5309724417803,
+            "volume_mm3": 163.87580063485075,
+            "centroid_mm": [
+              54.40701864615386,
+              -74.50170553846155,
+              -157.9423076923077
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 184,
+            "diameter_mm": 6.72079818490395,
+            "surface_area_mm2": 126.39001794154052,
+            "volume_mm3": 143.2191871093528,
+            "centroid_mm": [
+              53.813268246153854,
+              -74.69581624615384,
+              -157.98076923076925
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 3,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 3,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 200,
+            "diameter_mm": 7.309704074199461,
+            "surface_area_mm2": 154.8515415678111,
+            "volume_mm3": 185.22096794440586,
+            "centroid_mm": [
+              53.855777253012036,
+              -74.8366875180723,
+              -157.29819277108436
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 10,
+        "num_annotations": 3,
+        "diameter_mm": 6.8406600460476215,
+        "centroid_mm": [
+          47.30586466222744,
+          -92.68693965047657,
+          -157.47159659659658
+        ],
+        "annotations": [
+          {
+            "annotation_id": 175,
+            "diameter_mm": 6.842635261669281,
+            "surface_area_mm2": 59.76764444472178,
+            "volume_mm3": 55.0843027344672,
+            "centroid_mm": [
+              48.098668869565216,
+              -93.0861923478261,
+              -157.75
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 185,
+            "diameter_mm": 6.638331280338451,
+            "surface_area_mm2": 70.03091615323677,
+            "volume_mm3": 63.34694814468094,
+            "centroid_mm": [
+              46.546169333333324,
+              -92.47756233333334,
+              -156.84722222222223
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 2,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 3,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 201,
+            "diameter_mm": 7.041013596135135,
+            "surface_area_mm2": 133.2293737138953,
+            "volume_mm3": 150.79327873550938,
+            "centroid_mm": [
+              47.27275578378379,
+              -92.49706427027029,
+              -157.81756756756758
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 11,
+        "num_annotations": 1,
+        "diameter_mm": 5.652335409894913,
+        "centroid_mm": [
+          -74.25070024,
+          58.84549967999999,
+          -147.64999999999998
+        ],
+        "annotations": [
+          {
+            "annotation_id": 194,
+            "diameter_mm": 5.652335409894913,
+            "surface_area_mm2": 81.64979927053815,
+            "volume_mm3": 76.42947004416783,
+            "centroid_mm": [
+              -74.25070024,
+              58.84549967999999,
+              -147.64999999999998
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0013": {
+    "found": true,
+    "scan_id": 24,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.174907798609768549012640380786",
+    "num_nodules": 3,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 2,
+        "diameter_mm": 6.2084621996092455,
+        "centroid_mm": [
+          34.53238274999998,
+          21.52968738749999,
+          -255.0786991818182
+        ],
+        "annotations": [
+          {
+            "annotation_id": 210,
+            "diameter_mm": 5.5586959429312435,
+            "surface_area_mm2": 80.99637739688794,
+            "volume_mm3": 69.5229763185489,
+            "centroid_mm": [
+              34.75210949999999,
+              21.826318499999985,
+              -254.71364236363638
+            ],
+            "subtlety": 1,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 213,
+            "diameter_mm": 6.8582284562872475,
+            "surface_area_mm2": 135.09007600730132,
+            "volume_mm3": 134.32525671378244,
+            "centroid_mm": [
+              34.312655999999976,
+              21.233056274999996,
+              -255.443756
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 4,
+        "diameter_mm": 10.722210292715644,
+        "centroid_mm": [
+          -44.05235004499063,
+          -43.20073121963186,
+          -141.49796422299173
+        ],
+        "annotations": [
+          {
+            "annotation_id": 204,
+            "diameter_mm": 10.946225176084955,
+            "surface_area_mm2": 369.35310323970964,
+            "volume_mm3": 518.4182431645604,
+            "centroid_mm": [
+              -44.00772333333333,
+              -43.39632605747127,
+              -142.1574772643678
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 207,
+            "diameter_mm": 10.80416288043455,
+            "surface_area_mm2": 279.8117998612523,
+            "volume_mm3": 365.63935693367966,
+            "centroid_mm": [
+              -43.48371373983741,
+              -43.0925154796748,
+              -141.0939084390244
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 3,
+            "lobulation": 4,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 209,
+            "diameter_mm": 9.822110694558672,
+            "surface_area_mm2": 372.86299627924353,
+            "volume_mm3": 493.5273010259698,
+            "centroid_mm": [
+              -44.206169358288776,
+              -42.81094629946524,
+              -141.03717177540108
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 211,
+            "diameter_mm": 11.316342419784402,
+            "surface_area_mm2": 335.2597870186796,
+            "volume_mm3": 445.0328792729124,
+            "centroid_mm": [
+              -44.511793748502996,
+              -43.50313704191616,
+              -141.70329941317365
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 2,
+        "num_annotations": 4,
+        "diameter_mm": 21.96984973564483,
+        "centroid_mm": [
+          -36.21224154776604,
+          -65.16942802740286,
+          -124.50219233761234
+        ],
+        "annotations": [
+          {
+            "annotation_id": 205,
+            "diameter_mm": 20.042163246952146,
+            "surface_area_mm2": 1298.456285258434,
+            "volume_mm3": 1997.2845547056038,
+            "centroid_mm": [
+              -35.63026546967072,
+              -65.73358548006932,
+              -125.44705172616983
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 2,
+            "margin": 3,
+            "lobulation": 3,
+            "spiculation": 3,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 206,
+            "diameter_mm": 20.238200128319008,
+            "surface_area_mm2": 1058.3718440810576,
+            "volume_mm3": 1596.0251561305145,
+            "centroid_mm": [
+              -35.78322233260394,
+              -65.07488992122539,
+              -124.7394947177243
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 5,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 208,
+            "diameter_mm": 26.882998909564016,
+            "surface_area_mm2": 1318.7502976848223,
+            "volume_mm3": 2013.5925081058315,
+            "centroid_mm": [
+              -35.287135055456176,
+              -65.0243153452594,
+              -125.41171535241504
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 2,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 212,
+            "diameter_mm": 20.71603665774415,
+            "surface_area_mm2": 1040.4404477565577,
+            "volume_mm3": 1665.1195372046077,
+            "centroid_mm": [
+              -38.14834333333333,
+              -64.84492136305734,
+              -122.41050755414014
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 5,
+            "texture": 4,
+            "malignancy": 4
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0014": {
+    "found": true,
+    "scan_id": 25,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.747803439040091794717626507402",
+    "num_nodules": 1,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 4,
+        "diameter_mm": 17.784388422049286,
+        "centroid_mm": [
+          59.496958077706196,
+          -6.828905632438712,
+          -135.691437031027
+        ],
+        "annotations": [
+          {
+            "annotation_id": 214,
+            "diameter_mm": 18.415003213142167,
+            "surface_area_mm2": 870.6761134569149,
+            "volume_mm3": 1906.1288739761221,
+            "centroid_mm": [
+              59.289184692307714,
+              -6.771934372781061,
+              -136.13757396449705
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 215,
+            "diameter_mm": 18.99263757334383,
+            "surface_area_mm2": 755.5545413685185,
+            "volume_mm3": 1517.5167119887192,
+            "centroid_mm": [
+              59.50890842553193,
+              -6.737726638297858,
+              -135.38297872340428
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 216,
+            "diameter_mm": 16.930325481177267,
+            "surface_area_mm2": 638.6815266799597,
+            "volume_mm3": 1176.8609444596223,
+            "centroid_mm": [
+              59.4573203783784,
+              -6.680428810810781,
+              -135.4333976833977
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 217,
+            "diameter_mm": 16.79958742053388,
+            "surface_area_mm2": 764.0358423283199,
+            "volume_mm3": 1506.4922534931975,
+            "centroid_mm": [
+              59.732418814606746,
+              -7.125532707865148,
+              -135.81179775280899
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0015": {
+    "found": true,
+    "scan_id": 26,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.227962600322799211676960828223",
+    "num_nodules": 1,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 4,
+        "diameter_mm": 23.470773711989402,
+        "centroid_mm": [
+          72.93244136741657,
+          -0.9382658510796205,
+          -57.09357186256122
+        ],
+        "annotations": [
+          {
+            "annotation_id": 218,
+            "diameter_mm": 23.079587231840772,
+            "surface_area_mm2": 1626.4237016681434,
+            "volume_mm3": 2884.179750596377,
+            "centroid_mm": [
+              72.99045172994127,
+              -1.7301013326810164,
+              -56.98091976516635
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 3,
+            "spiculation": 3,
+            "texture": 4,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 219,
+            "diameter_mm": 21.7719142254572,
+            "surface_area_mm2": 1422.8782356002612,
+            "volume_mm3": 2800.6500109715853,
+            "centroid_mm": [
+              72.62670623250807,
+              -0.790480479009716,
+              -56.32158234660926
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 3,
+            "spiculation": 3,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 220,
+            "diameter_mm": 23.461776889203083,
+            "surface_area_mm2": 1510.454308229704,
+            "volume_mm3": 3242.3360442434205,
+            "centroid_mm": [
+              73.00295024745131,
+              -0.7069494754402399,
+              -57.04379054680258
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 2,
+            "margin": 3,
+            "lobulation": 3,
+            "spiculation": 3,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 221,
+            "diameter_mm": 25.56981650145655,
+            "surface_area_mm2": 2274.300800674675,
+            "volume_mm3": 4927.353237840871,
+            "centroid_mm": [
+              73.10965725976561,
+              -0.5255321171875096,
+              -58.02799479166668
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 5,
+            "texture": 4,
+            "malignancy": 4
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0016": {
+    "found": true,
+    "scan_id": 27,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.153536305742006952753134773630",
+    "num_nodules": 6,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 4,
+        "diameter_mm": 17.77130594143522,
+        "centroid_mm": [
+          112.38877847151086,
+          -43.43185496422604,
+          -199.17593478604286
+        ],
+        "annotations": [
+          {
+            "annotation_id": 222,
+            "diameter_mm": 18.93223618057668,
+            "surface_area_mm2": 775.9796302283262,
+            "volume_mm3": 1299.4788413091737,
+            "centroid_mm": [
+              112.08272683279739,
+              -43.97725076527331,
+              -199.45257234726688
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 230,
+            "diameter_mm": 16.91118984844215,
+            "surface_area_mm2": 589.4474203653822,
+            "volume_mm3": 990.0586812754045,
+            "centroid_mm": [
+              112.69188755506605,
+              -43.02888724229075,
+              -198.75881057268722
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 3,
+            "spiculation": 2,
+            "texture": 4,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 236,
+            "diameter_mm": 17.820608557389406,
+            "surface_area_mm2": 711.4923320932669,
+            "volume_mm3": 1309.7785415043472,
+            "centroid_mm": [
+              112.16055238461536,
+              -43.439630013377936,
+              -199.36538461538458
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 3,
+            "lobulation": 3,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 238,
+            "diameter_mm": 17.421189179332643,
+            "surface_area_mm2": 725.4036496121421,
+            "volume_mm3": 1312.7826207291218,
+            "centroid_mm": [
+              112.61994711356465,
+              -43.28165183596215,
+              -199.12697160883283
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 4,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 4,
+        "diameter_mm": 12.370181590063408,
+        "centroid_mm": [
+          104.45229512682285,
+          -9.84483988310668,
+          -183.32479614560313
+        ],
+        "annotations": [
+          {
+            "annotation_id": 223,
+            "diameter_mm": 12.3186410050398,
+            "surface_area_mm2": 416.97702860817043,
+            "volume_mm3": 627.4234035654808,
+            "centroid_mm": [
+              104.35438398958331,
+              -10.064577854166686,
+              -183.29166666666669
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 229,
+            "diameter_mm": 11.791774787402446,
+            "surface_area_mm2": 348.287859086001,
+            "volume_mm3": 484.08590917970287,
+            "centroid_mm": [
+              104.47888808860759,
+              -9.627055848101293,
+              -183.2151898734177
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 3,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 235,
+            "diameter_mm": 13.009934916942985,
+            "surface_area_mm2": 390.87603719763115,
+            "volume_mm3": 591.8036070562084,
+            "centroid_mm": [
+              104.38572508465606,
+              -9.886413174603177,
+              -183.3478835978836
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 3,
+            "lobulation": 4,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 239,
+            "diameter_mm": 12.360375650868397,
+            "surface_area_mm2": 363.62173658113676,
+            "volume_mm3": 525.2847099618521,
+            "centroid_mm": [
+              104.59018334444443,
+              -9.801312655555563,
+              -183.44444444444443
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 4,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          }
+        ]
+      },
+      {
+        "nodule_index": 2,
+        "num_annotations": 1,
+        "diameter_mm": 5.8593800000000105,
+        "centroid_mm": [
+          107.6012536222222,
+          50.32569177777779,
+          -158.63888888888889
+        ],
+        "annotations": [
+          {
+            "annotation_id": 237,
+            "diameter_mm": 5.8593800000000105,
+            "surface_area_mm2": 68.29447305345005,
+            "volume_mm3": 58.794121948158136,
+            "centroid_mm": [
+              107.6012536222222,
+              50.32569177777779,
+              -158.63888888888889
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 2,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 1,
+            "malignancy": 3
+          }
+        ]
+      },
+      {
+        "nodule_index": 3,
+        "num_annotations": 4,
+        "diameter_mm": 8.012347435968932,
+        "centroid_mm": [
+          77.51756251605119,
+          -36.50501760099732,
+          -144.26668351302786
+        ],
+        "annotations": [
+          {
+            "annotation_id": 224,
+            "diameter_mm": 8.924741724207387,
+            "surface_area_mm2": 200.12956076107892,
+            "volume_mm3": 238.18056701667956,
+            "centroid_mm": [
+              77.35448302,
+              -36.451074980000016,
+              -144.55
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 228,
+            "diameter_mm": 6.550985993001348,
+            "surface_area_mm2": 108.67875112913501,
+            "volume_mm3": 106.00108117680065,
+            "centroid_mm": [
+              77.62677835849053,
+              -36.58230298113209,
+              -143.6179245283019
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 3,
+            "lobulation": 3,
+            "spiculation": 2,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 234,
+            "diameter_mm": 7.70681112996888,
+            "surface_area_mm2": 148.74192947897166,
+            "volume_mm3": 152.34973205588176,
+            "centroid_mm": [
+              77.49148090476189,
+              -36.64192335714286,
+              -144.36309523809524
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 1,
+            "lobulation": 3,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 240,
+            "diameter_mm": 8.866850896698114,
+            "surface_area_mm2": 201.5323181743836,
+            "volume_mm3": 240.32633789087413,
+            "centroid_mm": [
+              77.59750778095236,
+              -36.344769085714304,
+              -144.53571428571428
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 4,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          }
+        ]
+      },
+      {
+        "nodule_index": 4,
+        "num_annotations": 4,
+        "diameter_mm": 6.903777018451885,
+        "centroid_mm": [
+          -61.81906469574156,
+          15.793992099374805,
+          -113.38206368025597
+        ],
+        "annotations": [
+          {
+            "annotation_id": 225,
+            "diameter_mm": 7.411594590574957,
+            "surface_area_mm2": 129.0209749348895,
+            "volume_mm3": 131.3211774903175,
+            "centroid_mm": [
+              -61.90499734482759,
+              15.618406413793082,
+              -113.67241379310346
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 2,
+            "texture": 5,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 231,
+            "diameter_mm": 6.310745393525553,
+            "surface_area_mm2": 102.71655752209622,
+            "volume_mm3": 100.8512310792139,
+            "centroid_mm": [
+              -61.728700921568645,
+              16.00427768627449,
+              -113.42647058823529
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 2,
+            "spiculation": 2,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 232,
+            "diameter_mm": 6.550985993001357,
+            "surface_area_mm2": 122.09588791671864,
+            "volume_mm3": 123.16724816897477,
+            "centroid_mm": [
+              -61.794762558823535,
+              15.699819705882362,
+              -112.91176470588235
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 1,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 241,
+            "diameter_mm": 7.341782096705673,
+            "surface_area_mm2": 130.26785553812073,
+            "volume_mm3": 134.32525671392796,
+            "centroid_mm": [
+              -61.84779795774648,
+              15.853464591549283,
+              -113.5176056338028
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 4,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          }
+        ]
+      },
+      {
+        "nodule_index": 5,
+        "num_annotations": 4,
+        "diameter_mm": 18.62291349209224,
+        "centroid_mm": [
+          55.490570130716044,
+          11.742534939861208,
+          -63.31979620813346
+        ],
+        "annotations": [
+          {
+            "annotation_id": 226,
+            "diameter_mm": 19.999292260434103,
+            "surface_area_mm2": 1037.1826870683303,
+            "volume_mm3": 1827.7676304930355,
+            "centroid_mm": [
+              55.42306502745993,
+              11.642461304347819,
+              -63.66304347826086
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 3,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 227,
+            "diameter_mm": 15.776863483813878,
+            "surface_area_mm2": 606.4305517109278,
+            "volume_mm3": 906.3736171889468,
+            "centroid_mm": [
+              55.689354508650524,
+              12.44877616608997,
+              -62.3884083044983
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 2,
+            "lobulation": 5,
+            "spiculation": 5,
+            "texture": 4,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 233,
+            "diameter_mm": 19.956329176956352,
+            "surface_area_mm2": 974.7032012016786,
+            "volume_mm3": 1710.6085407728096,
+            "centroid_mm": [
+              55.24802314537445,
+              11.654357383259907,
+              -63.48348017621147
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 2,
+            "lobulation": 2,
+            "spiculation": 3,
+            "texture": 4,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 242,
+            "diameter_mm": 18.75916904716463,
+            "surface_area_mm2": 971.0195925601347,
+            "volume_mm3": 1631.215018433868,
+            "centroid_mm": [
+              55.60183784137928,
+              11.224544905747138,
+              -63.74425287356323
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 5,
+            "texture": 4,
+            "malignancy": 4
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0017": {
+    "found": true,
+    "scan_id": 28,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.108231420525711026834210228428",
+    "num_nodules": 1,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 4,
+        "diameter_mm": 7.817360901635803,
+        "centroid_mm": [
+          42.52138154890545,
+          90.22725493008741,
+          -84.97610052937097
+        ],
+        "annotations": [
+          {
+            "annotation_id": 243,
+            "diameter_mm": 7.500531287791294,
+            "surface_area_mm2": 117.73775845029962,
+            "volume_mm3": 128.37166412064107,
+            "centroid_mm": [
+              42.42958471428574,
+              90.20596604395607,
+              -84.67307692307693
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 244,
+            "diameter_mm": 6.91130961562569,
+            "surface_area_mm2": 113.16329566761964,
+            "volume_mm3": 122.73259877176315,
+            "centroid_mm": [
+              42.738587082474254,
+              90.50795313402065,
+              -85.09536082474224
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 245,
+            "diameter_mm": 7.84635744926879,
+            "surface_area_mm2": 134.71068079751535,
+            "volume_mm3": 152.9181838749355,
+            "centroid_mm": [
+              42.59716103389832,
+              90.08520254237291,
+              -85.0593220338983
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 246,
+            "diameter_mm": 9.011245253857439,
+            "surface_area_mm2": 171.83399422447195,
+            "volume_mm3": 197.03557748740423,
+            "centroid_mm": [
+              42.3201933649635,
+              90.10989800000002,
+              -85.07664233576642
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0018": {
+    "found": true,
+    "scan_id": 29,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.882070241245008756731854510592",
+    "num_nodules": 4,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 3,
+        "diameter_mm": 5.829439380033636,
+        "centroid_mm": [
+          -98.77733099499375,
+          25.957482180722717,
+          -170.3804439634372
+        ],
+        "annotations": [
+          {
+            "annotation_id": 247,
+            "diameter_mm": 6.2998452827002085,
+            "surface_area_mm2": 107.46167649446701,
+            "volume_mm3": 110.79580788580643,
+            "centroid_mm": [
+              -99.16158380851064,
+              25.771129191489393,
+              -170.03340225531915
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 254,
+            "diameter_mm": 5.475995535917833,
+            "surface_area_mm2": 81.91443989882666,
+            "volume_mm3": 81.02976994632627,
+            "centroid_mm": [
+              -98.370361,
+              26.017480615384642,
+              -170.09204928205128
+            ],
+            "subtlety": 2,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 257,
+            "diameter_mm": 5.712477321482868,
+            "surface_area_mm2": 118.67929084053085,
+            "volume_mm3": 128.43494147960882,
+            "centroid_mm": [
+              -98.80004817647058,
+              26.083836735294113,
+              -171.0158803529412
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 4,
+        "diameter_mm": 11.562617089904565,
+        "centroid_mm": [
+          132.6725734839679,
+          16.71907616050551,
+          -130.10631273174928
+        ],
+        "annotations": [
+          {
+            "annotation_id": 248,
+            "diameter_mm": 12.476592241671254,
+            "surface_area_mm2": 426.0647022942268,
+            "volume_mm3": 696.7457769540499,
+            "centroid_mm": [
+              132.391184,
+              16.57017202352941,
+              -130.29529211764708
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 252,
+            "diameter_mm": 10.992181999824027,
+            "surface_area_mm2": 378.8144595246082,
+            "volume_mm3": 605.2427714358794,
+            "centroid_mm": [
+              132.78706711538462,
+              16.69081496153845,
+              -130.10807492307694
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 3,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 4
+          },
+          {
+            "annotation_id": 256,
+            "diameter_mm": 10.810146162687145,
+            "surface_area_mm2": 405.5069241623338,
+            "volume_mm3": 643.8283761712968,
+            "centroid_mm": [
+              133.14725459036146,
+              17.06946569879517,
+              -130.02987751807228
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 258,
+            "diameter_mm": 11.97154795543583,
+            "surface_area_mm2": 521.3169201433524,
+            "volume_mm3": 852.7418646737361,
+            "centroid_mm": [
+              132.36478823012555,
+              16.545851958159005,
+              -129.99200636820083
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 3,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 1
+          }
+        ]
+      },
+      {
+        "nodule_index": 2,
+        "num_annotations": 3,
+        "diameter_mm": 8.114038859855265,
+        "centroid_mm": [
+          92.86583933034827,
+          -18.987591678255768,
+          -120.08537357311481
+        ],
+        "annotations": [
+          {
+            "annotation_id": 249,
+            "diameter_mm": 9.249313376123458,
+            "surface_area_mm2": 158.92735492447434,
+            "volume_mm3": 181.9035651854938,
+            "centroid_mm": [
+              92.83522420000003,
+              -19.058707399999975,
+              -120.01833133333332
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 4,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 253,
+            "diameter_mm": 6.772130192470916,
+            "surface_area_mm2": 128.4610296729449,
+            "volume_mm3": 138.3569541259203,
+            "centroid_mm": [
+              93.10084900000001,
+              -18.854280470588236,
+              -120.08450780392158
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 3,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 259,
+            "diameter_mm": 8.320673010971424,
+            "surface_area_mm2": 163.16520511264213,
+            "volume_mm3": 194.5816924565588,
+            "centroid_mm": [
+              92.66144479104477,
+              -19.049787164179094,
+              -120.15328158208953
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      },
+      {
+        "nodule_index": 3,
+        "num_annotations": 4,
+        "diameter_mm": 21.796444929269107,
+        "centroid_mm": [
+          83.31752637521268,
+          35.682922934528264,
+          -47.81102563107655
+        ],
+        "annotations": [
+          {
+            "annotation_id": 250,
+            "diameter_mm": 22.273316599116995,
+            "surface_area_mm2": 1420.5815773864242,
+            "volume_mm3": 3096.2191686278675,
+            "centroid_mm": [
+              83.2291152513863,
+              35.575674118299446,
+              -47.881165510166376
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 3,
+            "lobulation": 2,
+            "spiculation": 3,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 251,
+            "diameter_mm": 20.75658541349199,
+            "surface_area_mm2": 1019.6882749547125,
+            "volume_mm3": 2011.9636755379906,
+            "centroid_mm": [
+              83.29519717910446,
+              35.066310149253724,
+              -48.380896522388056
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 5,
+            "spiculation": 3,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 255,
+            "diameter_mm": 21.104220507814084,
+            "surface_area_mm2": 1183.1582159112036,
+            "volume_mm3": 2770.446420069784,
+            "centroid_mm": [
+              83.71448620095697,
+              36.211903645933006,
+              -47.82315889473685
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 3,
+            "texture": 5,
+            "malignancy": 5
+          },
+          {
+            "annotation_id": 260,
+            "diameter_mm": 23.051657196653363,
+            "surface_area_mm2": 1414.0450637870697,
+            "volume_mm3": 3543.8121835695347,
+            "centroid_mm": [
+              83.03130686940298,
+              35.87780382462688,
+              -47.15888159701491
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 4,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0019": {
+    "found": true,
+    "scan_id": 30,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.330425234131526435132846006585",
+    "num_nodules": 1,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 2,
+        "diameter_mm": 31.71283255128429,
+        "centroid_mm": [
+          -65.76477403469218,
+          -12.178139276928675,
+          -54.742959549129395
+        ],
+        "annotations": [
+          {
+            "annotation_id": 261,
+            "diameter_mm": 27.814497599732213,
+            "surface_area_mm2": 2341.800233579228,
+            "volume_mm3": 4397.713854346966,
+            "centroid_mm": [
+              -65.77628433784699,
+              -11.08862356872038,
+              -54.06905890318214
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 2,
+            "margin": 3,
+            "lobulation": 3,
+            "spiculation": 3,
+            "texture": 5,
+            "malignancy": 2
+          },
+          {
+            "annotation_id": 262,
+            "diameter_mm": 35.611167502836366,
+            "surface_area_mm2": 3547.0969635497395,
+            "volume_mm3": 7963.383826134668,
+            "centroid_mm": [
+              -65.75326373153737,
+              -13.267654985136971,
+              -55.41686019507665
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 5,
+            "texture": 4,
+            "malignancy": 4
+          }
+        ]
+      }
+    ]
+  },
+  "LIDC-IDRI-0020": {
+    "found": true,
+    "scan_id": 31,
+    "series_instance_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.315214756157389122376518747372",
+    "num_nodules": 2,
+    "nodules": [
+      {
+        "nodule_index": 0,
+        "num_annotations": 1,
+        "diameter_mm": 33.62840146015902,
+        "centroid_mm": [
+          54.89924345390074,
+          15.90836934840425,
+          -80.1318705673759
+        ],
+        "annotations": [
+          {
+            "annotation_id": 265,
+            "diameter_mm": 33.62840146015902,
+            "surface_area_mm2": 2111.327721105697,
+            "volume_mm3": 4403.635559082031,
+            "centroid_mm": [
+              54.89924345390074,
+              15.90836934840425,
+              -80.1318705673759
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 3,
+            "margin": 2,
+            "lobulation": 3,
+            "spiculation": 4,
+            "texture": 5,
+            "malignancy": 5
+          }
+        ]
+      },
+      {
+        "nodule_index": 1,
+        "num_annotations": 4,
+        "diameter_mm": 7.211083302823991,
+        "centroid_mm": [
+          49.810787004781716,
+          -31.02120697700351,
+          -40.82881111771892
+        ],
+        "annotations": [
+          {
+            "annotation_id": 263,
+            "diameter_mm": 7.856283561980818,
+            "surface_area_mm2": 139.17470197205307,
+            "volume_mm3": 156.0174560546875,
+            "centroid_mm": [
+              49.53426039285711,
+              -31.158203125,
+              -40.60267857142858
+            ],
+            "subtlety": 4,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 264,
+            "diameter_mm": 6.676557197809736,
+            "surface_area_mm2": 121.15420015293307,
+            "volume_mm3": 135.01510620117188,
+            "centroid_mm": [
+              50.0241447272727,
+              -30.836363636363643,
+              -40.9659090909091
+            ],
+            "subtlety": 3,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 266,
+            "diameter_mm": 6.676557197809736,
+            "surface_area_mm2": 113.51014573237411,
+            "volume_mm3": 129.01443481445312,
+            "centroid_mm": [
+              50.1155291782178,
+              -30.788211633663366,
+              -40.59405940594058
+            ],
+            "subtlety": 2,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 4,
+            "margin": 4,
+            "lobulation": 2,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 3
+          },
+          {
+            "annotation_id": 267,
+            "diameter_mm": 7.634935253695672,
+            "surface_area_mm2": 155.9736990509511,
+            "volume_mm3": 187.30667114257812,
+            "centroid_mm": [
+              49.56921372077926,
+              -31.302049512987026,
+              -41.152597402597415
+            ],
+            "subtlety": 5,
+            "internalStructure": 1,
+            "calcification": 6,
+            "sphericity": 5,
+            "margin": 5,
+            "lobulation": 1,
+            "spiculation": 1,
+            "texture": 5,
+            "malignancy": 2
+          }
+        ]
+      }
+    ]
+  }
+}
