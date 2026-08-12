@@ -3,27 +3,26 @@ scan) and compare against two independent ground truths - a MedGemma-only
 counting baseline to set against the MONAI detector evaluated in
 7_evaluate_detection.py.
 
-Two-pass, cached per patient (same pattern as 5_characterize_nodules.py /
-7_evaluate_detection.py) so a long run can be resumed:
-  Pass 1: run MedGemma 1.5 on the full sampled slice sequence of each patient's
-          CT series (same slice sampling/windowing as 2_model_3d.py), parse an
-          integer nodule count from its response, and cache the raw response +
-          parsed count to medgemma_count_cache/<patient>.json.
-  Pass 2: compare parsed counts against per-patient nodule counts from two
-          genuinely separate sources:
-            * gt_count_pylidc: ground_truth_annotations.json's num_nodules -
-                                every pylidc consensus annotation cluster, any
-                                number of readers.
-            * gt_count_luna16: the actual external LUNA16 challenge
-                                annotations.csv (not a rule applied to pylidc's
-                                own data - a separately collected/filtered
-                                nodule list), joined to patients via
-                                SeriesInstanceUID.
+Cached per patient (same pattern as 5_characterize_nodules.py /
+7_evaluate_detection.py) so a long run can be resumed: for each patient, run
+MedGemma 1.5 on the full sampled slice sequence of each CT series (same slice
+sampling/windowing as 2_model_3d.py), parse an integer nodule count from its
+response, cache the raw response + parsed count to
+medgemma_count_cache/<patient>.json, and immediately print that patient's
+count against two genuinely separate ground truths (plus a running ETA):
+  * gt_count_pylidc: ground_truth_annotations.json's num_nodules - every
+                      pylidc consensus annotation cluster, any number of
+                      readers.
+  * gt_count_luna16: the actual external LUNA16 challenge annotations.csv
+                      (not a rule applied to pylidc's own data - a
+                      separately collected/filtered nodule list), joined to
+                      patients via SeriesInstanceUID.
 """
 import argparse
 import csv
 import json
 import re
+import time
 from pathlib import Path
 
 import pydicom
@@ -98,6 +97,13 @@ def luna16_csv_counts_by_series():
     return counts
 
 
+def format_duration(seconds):
+    seconds = round(seconds)
+    h, rem = divmod(seconds, 3600)
+    m, s = divmod(rem, 60)
+    return f"{h}h{m:02d}m" if h else f"{m}m{s:02d}s" if m else f"{s}s"
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--start", type=int, default=1)
@@ -108,63 +114,59 @@ if __name__ == "__main__":
     patient_ids = [f"LIDC-IDRI-{i:04d}" for i in range(args.start, args.end + 1)]
     CACHE_DIR.mkdir(exist_ok=True)
 
-    needs_run = [pid for pid in patient_ids if not (CACHE_DIR / f"{pid}.json").exists()]
+    ground_truth = json.loads(GT_PATH.read_text())
+    luna16_csv_counts = luna16_csv_counts_by_series()
 
+    needs_run = [pid for pid in patient_ids if not (CACHE_DIR / f"{pid}.json").exists()]
+    pipe = None
     if needs_run:
         print(f"Loading MedGemma 1.5 on {DEVICE}...")
         pipe = pipeline("image-text-to-text", model=MODEL_ID, device=DEVICE, dtype=torch.bfloat16)
+    else:
+        print("All requested patients already cached - skipping MedGemma entirely for this run.")
 
-        for n, patient_id in enumerate(patient_ids):
-            cache_path = CACHE_DIR / f"{patient_id}.json"
-            if cache_path.exists():
-                print(f"[{n + 1}/{len(patient_ids)}] {patient_id}: already cached, skipping")
-                continue
+    # Seconds spent actually running MedGemma per patient (cache hits don't count - they're
+    # ~instant and would understate the ETA for the patients still to come).
+    patient_seconds = []
+
+    rows = []
+    for n, patient_id in enumerate(patient_ids):
+        cache_path = CACHE_DIR / f"{patient_id}.json"
+        if cache_path.exists():
+            series_results = json.loads(cache_path.read_text())
+            timing_note = "cached"
+        else:
             patient_dir = DICOM_ROOT / patient_id
             if not patient_dir.is_dir():
                 print(f"[{n + 1}/{len(patient_ids)}] {patient_id}: no DICOM directory, skipping")
                 continue
 
+            patient_start = time.monotonic()
             series = dicom_series_for_patient(patient_dir)
-            results = []
+            series_results = []
             for series_uid, slice_paths in series.items():
                 sampled = sample_slices(slice_paths)
                 messages = build_messages(sampled)
                 result = pipe(text=messages, max_new_tokens=args.max_new_tokens)
                 response = result[0]["generated_text"][-1]["content"]
                 count = parse_count(response)
-                results.append({
+                series_results.append({
                     "series_uid": series_uid,
                     "num_slices_total": len(slice_paths),
                     "num_slices_sampled": len(sampled),
                     "response": response,
                     "predicted_count": count,
                 })
-                print(f"[{n + 1}/{len(patient_ids)}] {patient_id} ({series_uid[:8]}...): "
-                      f"predicted_count={count}  raw={response!r}")
                 if torch.cuda.is_available():
                     torch.cuda.empty_cache()
                 elif torch.backends.mps.is_available():
                     torch.mps.empty_cache()
+            cache_path.write_text(json.dumps(series_results, indent=2))
 
-            cache_path.write_text(json.dumps(results, indent=2))
+            elapsed = time.monotonic() - patient_start
+            patient_seconds.append(elapsed)
+            timing_note = format_duration(elapsed)
 
-        del pipe
-        if torch.cuda.is_available():
-            torch.cuda.empty_cache()
-        elif torch.backends.mps.is_available():
-            torch.mps.empty_cache()
-    else:
-        print("All requested patients already cached - skipping MedGemma entirely for this run.")
-
-    # --- Compare against ground truth ---
-    ground_truth = json.loads(GT_PATH.read_text())
-    luna16_csv_counts = luna16_csv_counts_by_series()
-    rows = []
-    for patient_id in patient_ids:
-        cache_path = CACHE_DIR / f"{patient_id}.json"
-        if not cache_path.exists():
-            continue
-        series_results = json.loads(cache_path.read_text())
         # A patient can have >1 CT series; sum predicted counts across series to
         # match ground truth, which is reported per patient in this pipeline.
         predicted = sum(r["predicted_count"] for r in series_results if r["predicted_count"] is not None)
@@ -175,7 +177,7 @@ if __name__ == "__main__":
         series_uid = gt.get("series_instance_uid")
         gt_luna16 = luna16_csv_counts.get(series_uid, 0) if series_uid else 0
 
-        rows.append({
+        row = {
             "patient_id": patient_id,
             "predicted_count": predicted,
             "gt_count_pylidc": gt_pylidc,
@@ -183,7 +185,25 @@ if __name__ == "__main__":
             "error_vs_pylidc": predicted - gt_pylidc,
             "error_vs_luna16": predicted - gt_luna16,
             "unparsed_responses": unparsed,
-        })
+        }
+        rows.append(row)
+
+        eta_note = ""
+        remaining = len(needs_run) - len(patient_seconds)
+        if patient_seconds and remaining > 0:
+            avg = sum(patient_seconds) / len(patient_seconds)
+            eta_note = f"  ETA {format_duration(avg * remaining)} ({remaining} patient(s) left)"
+
+        print(f"[{n + 1}/{len(patient_ids)}] {patient_id} ({timing_note}): "
+              f"medgemma={predicted}  pylidc={gt_pylidc} (err {row['error_vs_pylidc']:+d})  "
+              f"luna16={gt_luna16} (err {row['error_vs_luna16']:+d}){eta_note}")
+
+    if pipe is not None:
+        del pipe
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+        elif torch.backends.mps.is_available():
+            torch.mps.empty_cache()
 
     print(f"\n{'patient':<18}{'medgemma':>10}{'gt_pylidc':>11}{'gt_luna16':>11}{'err_pylidc':>12}{'err_luna16':>12}")
     for r in rows:
