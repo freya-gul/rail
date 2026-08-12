@@ -1,6 +1,7 @@
 """Count lung nodules with MedGemma alone (whole-volume, single global count per
-scan) and compare against pylidc ground truth - a MedGemma-only counting
-baseline to set against the MONAI detector evaluated in 7_evaluate_detection.py.
+scan) and compare against two independent ground truths - a MedGemma-only
+counting baseline to set against the MONAI detector evaluated in
+7_evaluate_detection.py.
 
 Two-pass, cached per patient (same pattern as 5_characterize_nodules.py /
 7_evaluate_detection.py) so a long run can be resumed:
@@ -8,12 +9,16 @@ Two-pass, cached per patient (same pattern as 5_characterize_nodules.py /
           CT series (same slice sampling/windowing as 2_model_3d.py), parse an
           integer nodule count from its response, and cache the raw response +
           parsed count to medgemma_count_cache/<patient>.json.
-  Pass 2: compare parsed counts against ground_truth_annotations.json's per-
-          patient nodule count, against both ground-truth definitions used
-          elsewhere in this pipeline:
-            * all_gt:    every pylidc annotation cluster, any number of readers
-            * luna16_gt: >=3 of 4 readers AND diameter >= 3mm (the LUNA16-style
-                          definition used in 7_evaluate_detection.py)
+  Pass 2: compare parsed counts against per-patient nodule counts from two
+          genuinely separate sources:
+            * gt_count_pylidc: ground_truth_annotations.json's num_nodules -
+                                every pylidc consensus annotation cluster, any
+                                number of readers.
+            * gt_count_luna16: the actual external LUNA16 challenge
+                                annotations.csv (not a rule applied to pylidc's
+                                own data - a separately collected/filtered
+                                nodule list), joined to patients via
+                                SeriesInstanceUID.
 """
 import argparse
 import csv
@@ -32,11 +37,9 @@ DEVICE = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is
 
 DICOM_ROOT = Path(__file__).resolve().parent.parent / "datasets/LDIC-IDRI-subset/lidc_idri"
 GT_PATH = Path(__file__).resolve().parent / "ground_truth_annotations.json"
+LUNA16_ANNOTATIONS_CSV = Path(__file__).resolve().parent.parent / "datasets/LDIC-IDRI-subset/annotations.csv"
 CACHE_DIR = Path(__file__).resolve().parent / "medgemma_count_cache"
 OUTPUT_CSV = Path(__file__).resolve().parent / "medgemma_counting_comparison.csv"
-
-LUNA16_MIN_ANNOTATIONS = 3
-LUNA16_MIN_DIAMETER_MM = 3.0
 
 PROMPT = '''You are a radiologist. You are given the full sequence of axial slices from a chest CT scan, ordered from superior to inferior and labeled with their slice number.
 Examine the whole volume and determine the number of distinct lung nodules present, counting each nodule once even if it spans multiple slices. Nodules are small, round or oval-shaped growths in the lung parenchyma.
@@ -84,9 +87,15 @@ def parse_count(response):
     return int(numbers[-1]) if numbers else None
 
 
-def luna16_style(nodules):
-    return [n for n in nodules if n["num_annotations"] >= LUNA16_MIN_ANNOTATIONS
-                                and n["diameter_mm"] >= LUNA16_MIN_DIAMETER_MM]
+def luna16_csv_counts_by_series():
+    """Nodule count per SeriesInstanceUID straight from the external LUNA16
+    challenge annotations.csv - one row per annotated nodule, so grouping by
+    seriesuid gives LUNA16's own count, independent of pylidc's clustering."""
+    counts = {}
+    with LUNA16_ANNOTATIONS_CSV.open() as f:
+        for row in csv.DictReader(f):
+            counts[row["seriesuid"]] = counts.get(row["seriesuid"], 0) + 1
+    return counts
 
 
 if __name__ == "__main__":
@@ -149,6 +158,7 @@ if __name__ == "__main__":
 
     # --- Compare against ground truth ---
     ground_truth = json.loads(GT_PATH.read_text())
+    luna16_csv_counts = luna16_csv_counts_by_series()
     rows = []
     for patient_id in patient_ids:
         cache_path = CACHE_DIR / f"{patient_id}.json"
@@ -161,37 +171,37 @@ if __name__ == "__main__":
         unparsed = sum(1 for r in series_results if r["predicted_count"] is None)
 
         gt = ground_truth.get(patient_id, {})
-        gt_nodules = gt.get("nodules", [])
-        gt_all = len(gt_nodules)
-        gt_luna16 = len(luna16_style(gt_nodules))
+        gt_pylidc = len(gt.get("nodules", []))
+        series_uid = gt.get("series_instance_uid")
+        gt_luna16 = luna16_csv_counts.get(series_uid, 0) if series_uid else 0
 
         rows.append({
             "patient_id": patient_id,
             "predicted_count": predicted,
-            "gt_count_all": gt_all,
+            "gt_count_pylidc": gt_pylidc,
             "gt_count_luna16": gt_luna16,
-            "error_vs_all": predicted - gt_all,
+            "error_vs_pylidc": predicted - gt_pylidc,
             "error_vs_luna16": predicted - gt_luna16,
             "unparsed_responses": unparsed,
         })
 
-    print(f"\n{'patient':<18}{'medgemma':>10}{'gt_all':>10}{'gt_luna16':>12}{'err_all':>10}{'err_luna16':>12}")
+    print(f"\n{'patient':<18}{'medgemma':>10}{'gt_pylidc':>11}{'gt_luna16':>11}{'err_pylidc':>12}{'err_luna16':>12}")
     for r in rows:
-        print(f"{r['patient_id']:<18}{r['predicted_count']:>10}{r['gt_count_all']:>10}"
-              f"{r['gt_count_luna16']:>12}{r['error_vs_all']:>10}{r['error_vs_luna16']:>12}")
+        print(f"{r['patient_id']:<18}{r['predicted_count']:>10}{r['gt_count_pylidc']:>11}"
+              f"{r['gt_count_luna16']:>11}{r['error_vs_pylidc']:>12}{r['error_vs_luna16']:>12}")
 
     if rows:
-        mae_all = sum(abs(r["error_vs_all"]) for r in rows) / len(rows)
+        mae_pylidc = sum(abs(r["error_vs_pylidc"]) for r in rows) / len(rows)
         mae_luna16 = sum(abs(r["error_vs_luna16"]) for r in rows) / len(rows)
-        bias_all = sum(r["error_vs_all"] for r in rows) / len(rows)
+        bias_pylidc = sum(r["error_vs_pylidc"] for r in rows) / len(rows)
         bias_luna16 = sum(r["error_vs_luna16"] for r in rows) / len(rows)
-        print(f"\nMAE vs all_gt: {mae_all:.2f}   bias (pred-gt): {bias_all:+.2f}")
-        print(f"MAE vs luna16_gt: {mae_luna16:.2f}   bias (pred-gt): {bias_luna16:+.2f}")
+        print(f"\nMAE vs pylidc: {mae_pylidc:.2f}   bias (pred-gt): {bias_pylidc:+.2f}")
+        print(f"MAE vs luna16: {mae_luna16:.2f}   bias (pred-gt): {bias_luna16:+.2f}")
 
     with OUTPUT_CSV.open("w", newline="") as f:
         fieldnames = list(rows[0].keys()) if rows else [
-            "patient_id", "predicted_count", "gt_count_all", "gt_count_luna16",
-            "error_vs_all", "error_vs_luna16", "unparsed_responses",
+            "patient_id", "predicted_count", "gt_count_pylidc", "gt_count_luna16",
+            "error_vs_pylidc", "error_vs_luna16", "unparsed_responses",
         ]
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
