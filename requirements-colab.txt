@@ -1,0 +1,13 @@
+# Colab-specific install list. Deliberately does NOT pin torch/torchvision/
+# pandas/numpy/pillow: Colab preinstalls those already matched to its CUDA
+# runtime, and forcing our locally-pinned versions (see requirements.txt)
+# drags in a different CUDA toolkit version, which conflicts with Colab's
+# preinstalled RAPIDS stack (cudf/cuml/libraft/etc). Only install what
+# Colab is actually missing, with lower bounds instead of exact pins so
+# pip can keep whatever Colab already has if it's new enough.
+pylidc==0.2.3
+pydicom==3.0.2
+monai==1.6.0
+simpleitk==2.5.5
+transformers>=5.12.1
+huggingface_hub>=1.21.0
