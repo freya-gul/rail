@@ -9,7 +9,7 @@ from transformers import pipeline
 from medgemma_ct import hu_to_rgb, sample_slices
 
 MODEL_ID = "google/medgemma-1.5-4b-it"
-DEVICE = "mps" if torch.backends.mps.is_available() else "cpu"
+DEVICE = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
 
 DICOM_ROOT = Path(__file__).resolve().parent.parent / "datasets/LDIC-IDRI-subset/lidc_idri"
 RESULTS_CSV = Path(__file__).resolve().parent / "nodule_counts_3d.csv"

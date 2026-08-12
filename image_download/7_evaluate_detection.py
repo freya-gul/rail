@@ -70,7 +70,8 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--start", type=int, default=1)
     ap.add_argument("--end", type=int, default=20)
-    ap.add_argument("--device", default="mps" if torch.backends.mps.is_available() else "cpu",
+    ap.add_argument("--device",
+                     default="cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu",
                      help="Device for the detector's network forward pass; box selection/NMS "
                           "and sliding-window aggregation always run on CPU regardless (see "
                           "monai_bundles/lung_nodule_ct_detection/configs/inference.json).")
@@ -119,7 +120,9 @@ if __name__ == "__main__":
                 print(f"[{n + 1}/{len(patient_ids)}] {patient_id}: FAILED - {type(e).__name__}: {e}")
 
         del detector, preprocessing, postprocessing
-        if torch.backends.mps.is_available():
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+        elif torch.backends.mps.is_available():
             torch.mps.empty_cache()
     else:
         print("All requested patients already cached - skipping the detector entirely for this run.")

@@ -28,7 +28,7 @@ from transformers import pipeline
 from medgemma_ct import hu_to_rgb, sample_slices
 
 MODEL_ID = "google/medgemma-1.5-4b-it"
-DEVICE = "mps" if torch.backends.mps.is_available() else "cpu"
+DEVICE = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
 
 DICOM_ROOT = Path(__file__).resolve().parent.parent / "datasets/LDIC-IDRI-subset/lidc_idri"
 GT_PATH = Path(__file__).resolve().parent / "ground_truth_annotations.json"
@@ -132,13 +132,17 @@ if __name__ == "__main__":
                 })
                 print(f"[{n + 1}/{len(patient_ids)}] {patient_id} ({series_uid[:8]}...): "
                       f"predicted_count={count}  raw={response!r}")
-                if torch.backends.mps.is_available():
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+                elif torch.backends.mps.is_available():
                     torch.mps.empty_cache()
 
             cache_path.write_text(json.dumps(results, indent=2))
 
         del pipe
-        if torch.backends.mps.is_available():
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+        elif torch.backends.mps.is_available():
             torch.mps.empty_cache()
     else:
         print("All requested patients already cached - skipping MedGemma entirely for this run.")
