@@ -9,7 +9,7 @@ testing two of the cheap levers before reaching for LoRA fine-tuning:
   --fewshot    Prepends two fixed calibration examples (real images + their consensus-rounded
                ground-truth JSON) as prior conversation turns before the target nodule: one
                unambiguous low-spiculation nodule (LIDC-IDRI-0005 #0, spiculation=1.0/4 readers)
-               and one unambiguous high-spiculation nodule (LIDC-IDRI-0011 #9, spiculation=4.25/4
+               and one unambiguous high-spiculation nodule (LIDC-IDRI-0007 #0, spiculation=5.0/4
                readers) - anchoring both ends of the scale the model was seen defaulting to "1"
                on. Costs ~2x the vision tokens/prefill time of the baseline per nodule.
 
@@ -25,11 +25,10 @@ import re
 import time
 from pathlib import Path
 
-import numpy as np
-import pydicom
 import torch
 from transformers import pipeline
 
+from ground_truth_roi import crop_at_centroid, load_patient_volume
 from lidc_attributes import LIDC_ATTRIBUTES
 from medgemma_ct import hu_to_rgb, sample_slices
 
@@ -49,7 +48,7 @@ ATTRS = list(LIDC_ATTRIBUTES.keys())
 # each extreme - see the conversation that picked these for the full candidate search.
 FEWSHOT_EXAMPLES = [
     ("LIDC-IDRI-0005", 0),  # spiculation=1.00 (4/4 readers) - "No Spiculation" anchor
-    ("LIDC-IDRI-0011", 9),  # spiculation=4.25 (4/4 readers) - "Marked Spiculation" anchor
+    ("LIDC-IDRI-0007", 0),  # spiculation=5.00 (4/4 readers) - "Marked Spiculation" anchor
 ]
 
 # Extra guidance appended (only under --anchored) to the three attributes bias_correction.json
@@ -97,54 +96,30 @@ def format_attribute_guide(anchored):
     return "\n".join(lines)
 
 
-# --- DICOM loading / cropping (same approach as 5b_characterize_ground_truth_nodules.py - crop
-# directly out of the raw series at the nodule's own centroid_mm/diameter_mm, no detector) ---
+# --- ROI loading for the few-shot calibration examples (same DICOM loading/cropping as
+# 5b_characterize_ground_truth_nodules.py, shared via ground_truth_roi.py) ---
 
-def load_patient_volume(patient_dir, series_uid):
-    slices = []
-    for f in patient_dir.rglob("*.dcm"):
-        ds = pydicom.dcmread(f)
-        if ds.Modality != "CT" or ds.SeriesInstanceUID != series_uid:
-            continue
-        slices.append(ds)
-    slices.sort(key=lambda ds: float(ds.ImagePositionPatient[2]))
-
-    pixel_spacing = float(slices[0].PixelSpacing[0])
-    origin_xy = (float(slices[0].ImagePositionPatient[0]), float(slices[0].ImagePositionPatient[1]))
-    z_positions = [float(ds.ImagePositionPatient[2]) for ds in slices]
-
-    volume = np.stack([
-        ds.pixel_array.astype(np.float32) * float(ds.get("RescaleSlope", 1)) + float(ds.get("RescaleIntercept", 0))
-        for ds in slices
-    ], axis=-1)
-    return volume, pixel_spacing, origin_xy, z_positions
-
-
-def crop_at_centroid(volume_hu, pixel_spacing, origin_xy, z_positions, centroid_mm, diameter_mm, pad_mm=PAD_MM):
-    x0, y0 = origin_xy
-    x, y, z = centroid_mm
-    col = (x - x0) / pixel_spacing
-    row = (y - y0) / pixel_spacing
-    slice_idx = int(np.argmin(np.abs(np.array(z_positions) - z)))
-
-    half_xy_px = max(1, round((diameter_mm / 2 + pad_mm) / pixel_spacing))
-    slice_spacing = float(np.median(np.abs(np.diff(z_positions)))) if len(z_positions) > 1 else 1.0
-    half_z = max(1, round((diameter_mm / 2 + pad_mm) / slice_spacing))
-
-    rows, cols, depth = volume_hu.shape
-    r0, r1 = max(0, round(row - half_xy_px)), min(rows, round(row + half_xy_px))
-    c0, c1 = max(0, round(col - half_xy_px)), min(cols, round(col + half_xy_px))
-    k0, k1 = max(0, slice_idx - half_z), min(depth, slice_idx + half_z + 1)
-    return volume_hu[r0:r1, c0:c1, k0:k1]
-
-
-def load_roi_for_nodule(patient_id, nodule_index, ground_truth):
+def load_roi_for_nodule(patient_id, nodule_index, ground_truth, volume_cache=None):
+    """Crop the ROI for one nodule, reusing `volume_cache[patient_id]` (a
+    load_patient_volume() result) if already present, and populating it otherwise -
+    lets the few-shot calibration patients' volumes be shared with the main loop
+    instead of being read off disk twice when a calibration patient also falls
+    inside --start/--end."""
     gt = ground_truth[patient_id]
     nodule = next(nd for nd in gt["nodules"] if nd["nodule_index"] == nodule_index)
-    volume, pixel_spacing, origin_xy, z_positions = load_patient_volume(DICOM_ROOT / patient_id, gt["series_instance_uid"])
-    roi_hu = crop_at_centroid(volume, pixel_spacing, origin_xy, z_positions, nodule["centroid_mm"], nodule["diameter_mm"])
+    if volume_cache is not None and patient_id in volume_cache:
+        volume, pixel_spacing, origin_xy, z_positions = volume_cache[patient_id]
+    else:
+        volume, pixel_spacing, origin_xy, z_positions = load_patient_volume(DICOM_ROOT / patient_id, gt["series_instance_uid"])
+        if volume_cache is not None:
+            volume_cache[patient_id] = (volume, pixel_spacing, origin_xy, z_positions)
+    roi_hu = crop_at_centroid(volume, pixel_spacing, origin_xy, z_positions,
+                               nodule["centroid_mm"], nodule["diameter_mm"], pad_mm=PAD_MM)
     means = {a: sum(ann[a] for ann in nodule["annotations"]) / len(nodule["annotations"]) for a in ATTRS}
-    rounded = {a: int(round(means[a])) for a in ATTRS}
+    # Round-half-up, not Python's round-half-to-even: these means are always positive (1-5 scale
+    # attributes), so int(x + 0.5) matches ordinary rounding without banker's-rounding pulling
+    # exact .5 means down to the nearest even integer (e.g. 2.5 -> 2 instead of 3).
+    rounded = {a: int(means[a] + 0.5) for a in ATTRS}
     return roi_hu, rounded
 
 
@@ -159,17 +134,21 @@ def build_image_content(roi_hu):
     return content
 
 
-def build_messages(target_roi, anchored, fewshot_rois=None):
+def build_messages(target_roi, anchored, fewshot_examples=None):
+    """fewshot_examples, if given, is a list of (image_content, answer_json) pairs with
+    image_content already built by build_image_content() - the two calibration ROIs never
+    change within a run, so the caller builds their image content once and passes it in here
+    rather than this function re-encoding the same two images on every nodule."""
     attribute_guide = format_attribute_guide(anchored)
     instructions = PROMPT_TEMPLATE.format(attribute_guide=attribute_guide)
 
-    if not fewshot_rois:
+    if not fewshot_examples:
         content = build_image_content(target_roi) + [{"type": "text", "text": instructions}]
         return [{"role": "user", "content": content}]
 
     messages = []
-    for i, (roi_hu, answer_json) in enumerate(fewshot_rois):
-        content = build_image_content(roi_hu)
+    for i, (image_content, answer_json) in enumerate(fewshot_examples):
+        content = list(image_content)  # copy - we append a per-call text block below
         content.append({"type": "text", "text": instructions if i == 0 else
                          "Here is another example nodule. Respond with ONLY the JSON object, exactly as before."})
         messages.append({"role": "user", "content": content})
@@ -293,13 +272,21 @@ if __name__ == "__main__":
     needs_run = [pid for pid, nds in per_patient_remaining.items() if nds]
 
     pipe = None
-    fewshot_rois = None
+    fewshot_examples = None
+    # Populated with any FEWSHOT_EXAMPLES patient's (volume, pixel_spacing, origin_xy,
+    # z_positions) below, so the main per-patient loop reuses it instead of re-parsing that
+    # patient's whole DICOM series from disk if it also falls inside --start/--end.
+    volume_cache = {}
     if needs_run:
         print(f"Loading MedGemma 1.5 on {DEVICE}... ({total_remaining} nodule(s) to characterize)")
         pipe = pipeline("image-text-to-text", model=MODEL_ID, device=DEVICE, dtype=torch.bfloat16)
         if args.fewshot:
             print("Cropping few-shot calibration examples...")
-            fewshot_rois = [(load_roi_for_nodule(pid, idx, ground_truth)) for pid, idx in FEWSHOT_EXAMPLES]
+            fewshot_examples = [
+                (build_image_content(roi_hu), answer_json)
+                for roi_hu, answer_json in
+                (load_roi_for_nodule(pid, idx, ground_truth, volume_cache) for pid, idx in FEWSHOT_EXAMPLES)
+            ]
     else:
         print("All requested patients' nodules already characterized - skipping MedGemma entirely for this run.")
 
@@ -319,14 +306,17 @@ if __name__ == "__main__":
         patient_rows = json.loads(out_path.read_text()) if out_path.exists() else []
 
         series_uid = gt["series_instance_uid"]
-        volume, pixel_spacing, origin_xy, z_positions = load_patient_volume(DICOM_ROOT / patient_id, series_uid)
+        if patient_id in volume_cache:
+            volume, pixel_spacing, origin_xy, z_positions = volume_cache.pop(patient_id)
+        else:
+            volume, pixel_spacing, origin_xy, z_positions = load_patient_volume(DICOM_ROOT / patient_id, series_uid)
 
         for nodule in todo:
             roi_hu = crop_at_centroid(
                 volume, pixel_spacing, origin_xy, z_positions,
-                nodule["centroid_mm"], nodule["diameter_mm"],
+                nodule["centroid_mm"], nodule["diameter_mm"], pad_mm=PAD_MM,
             )
-            messages = build_messages(roi_hu, args.anchored, fewshot_rois)
+            messages = build_messages(roi_hu, args.anchored, fewshot_examples)
             response, elapsed = run_pipe(pipe, messages, args.max_new_tokens)
             nodule_seconds.append(elapsed)
             nodules_done += 1

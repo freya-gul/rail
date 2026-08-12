@@ -107,6 +107,12 @@ if __name__ == "__main__":
             results[patient_id] = {"found": False, "num_nodules": 0, "nodules": []}
             continue
 
+        if not (DICOM_ROOT / patient_id).is_dir():
+            print(f"[{n + 1}/{len(patient_ids)}] {patient_id}: in pylidc DB but DICOM files "
+                  f"not downloaded locally, skipping")
+            results[patient_id] = {"found": False, "num_nodules": 0, "nodules": []}
+            continue
+
         nodules = collect_scan(scan)
         results[patient_id] = {
             "found": True,
